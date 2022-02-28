@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button @button-click="add">{{ points }}</Button>
+    <Button @button-click="updatePoints(1)">{{ points }}</Button>
   </div>
 </template>
 
@@ -11,6 +11,9 @@ export default {
   methods: {
     add: function () {
       console.log("yes");
+    },
+    updatePoints(points) {
+      this.$store.commit("updatePoints", points);
     },
   },
   computed: {

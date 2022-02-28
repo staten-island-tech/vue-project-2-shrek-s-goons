@@ -4,7 +4,11 @@ export default createStore({
   state: {
     points: 0,
   },
-  mutations: {},
+  mutations: {
+    updatePoints(state, payload) {
+      state.points = state.points + payload;
+    },
+  },
   actions: {},
   modules: {},
 });

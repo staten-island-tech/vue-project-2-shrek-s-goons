@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <Button @button-click="updatePoints(1)">{{ points }}</Button>
-  </div>
+  <div></div>
 </template>
 
 <script>
+import { useStore } from "vuex";
 import Button from "../components/button.vue";
 export default {
   components: Button,

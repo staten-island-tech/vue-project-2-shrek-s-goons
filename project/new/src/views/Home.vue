@@ -3,18 +3,18 @@
 </template>
 
 <script>
-import { useStore } from "vuex";
 import Button from "../components/button.vue";
 export default {
   components: Button,
-  methods: {
-    add: function () {
-      console.log("yes");
-    },
-    updatePoints(points) {
-      this.$store.commit("updatePoints", points);
-    },
+  setup() {
+    const yes = "yes";
+    console.log(store.state.user);
+    store.commit("setUser", "yoshi");
+    return {
+      yes,
+    };
   },
+  methods: {},
   computed: {
     points() {
       return this.$store.state.points;

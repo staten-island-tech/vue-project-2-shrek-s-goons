@@ -4,6 +4,7 @@
 
 <script>
 import Button from "../components/button.vue";
+import store from "../store/index";
 export default {
   components: Button,
   setup() {

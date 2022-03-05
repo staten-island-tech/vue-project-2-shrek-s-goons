@@ -7,4 +7,3 @@ export default {};
 </script>
 
 <style></style>
-s

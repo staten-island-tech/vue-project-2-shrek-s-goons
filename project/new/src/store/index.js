@@ -19,7 +19,7 @@ const store = createStore({
       state.user = payload;
       console.log("user state changed :", state.user);
     },
-    setAuthisReady(state, payload) {
+    setAuthIsReady(state, payload) {
       state.authIsReady = payload;
     },
   },

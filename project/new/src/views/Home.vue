@@ -9,6 +9,8 @@ export default {
   components: Button,
   setup() {
     const yes = "yes";
+    const store = useStore();
+
     console.log(store.state.user);
     store.commit("setUser", "yoshi");
     return {

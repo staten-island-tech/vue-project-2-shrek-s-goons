@@ -1,16 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-/* base styles */
-body {
-  font-family: "Poppins";
-}
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-/* navbar */
 nav {
   display: flex;
   align-items: center;
@@ -31,44 +18,7 @@ nav a {
 nav span {
   color: #777;
 }
-button {
-  background: #00dba4;
-  border: 0;
-  padding: 6px 10px;
-  border-radius: 20px;
-  color: #fff;
-  cursor: pointer;
-}
 
-/* blogs */
-.blog {
-  padding: 10px;
-  margin: 30px 0 20px;
-  border-top: 1px dotted #ddd;
-}
-.blog p {
-  color: #999;
-}
-.blog h3 {
-  color: #00dba4;
-}
-.blog .icons {
-  color: #555;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  font-size: 0.9em;
-}
-.blog .icons .material-icons {
-  font-size: 1em;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.blog .icons .material-icons:hover {
-  color: #00dba4;
-}
-
-/* forms */
 label {
   display: block;
   margin-bottom: 10px;
@@ -77,4 +27,70 @@ label {
 form button {
   display: block;
   margin-top: 20px;
+}
+
+.mainOrder {
+  flex: wrap;
+  display: flex;
+  width: 98vw;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-content: center;
+}
+
+.mainCart {
+  width: 500px;
+  margin-top: 600px;
+  position: absolute;
+  bottom: 10px;
+  left: 500px;
+  width: 700px;
+  border: 10px rgb(32, 172, 32) solid;
+  border-radius: 30px;
+}
+
+.cartTitle {
+  font-size: 40px;
+}
+
+h1 {
+  position: fixed;
+  font-size: 40px;
+  background-color: rgb(34, 68, 34);
+}
+
+h2,
+h3,
+h4 {
+  color: white;
+}
+
+.errorMessage {
+  color: white;
+  font-size: 30px;
+}
+
+#Button-Undo {
+  position: relative;
+  margin: 25px auto;
+}
+#Button-RemoveAll {
+  position: relative;
+  margin: 25px auto;
+}
+
+#Button-Checkout {
+  position: relative;
+  margin: 25px auto;
+}
+
+.list {
+  color: white;
+}
+
+.shrek {
+  max-width: 30%;
+  position: absolute;
+  left: 475px;
+  bottom: 20px;
 }

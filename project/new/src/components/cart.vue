@@ -1,6 +1,6 @@
 <template>
   <div class="mainCart">
-    <h2 class="cartTitle">Your Loadout:</h2>
+    <!-- <h2 class="cartTitle">Your Loadout:</h2>
     <p class="errorMessage" v-if="this.subtotal === 0">
       Shrek Says "You didn't buy anything yet loser"
     </p>
@@ -14,23 +14,26 @@
       }}
     </ul>
 
-    <h3>Subtotal:$ {{ subtotal }}</h3>
+    <h3>Subtotal:$ {{ subtotal }}</h3> -->
 
-    <button id="Button-Undo" @button-click="$emit('undo')">Undo</button>
-    <button id="Button-RemoveAll" @button-click="$emit('removeAll')">
+    <Button id="Button-Undo" @button-click="$emit('undo')">Undo</Button>
+    <Button id="Button-RemoveAll" @button-click="$emit('removeAll')">
       Remove All
-    </button>
-    <button id="Button-Checkout" @button-click="$emit('checkout')">
+    </Button>
+    <Button id="Button-Checkout" @button-click="$emit('checkout')">
       Checkout
-    </button>
+    </Button>
 
     <img class="shrek" src="//pbs.twimg.com/media/B-hpVrGIUAAHA_d.jpg" alt="" />
   </div>
 </template>
 
 <script>
+import Button from "../components/button.vue";
 export default {
   name: "Cart",
+  props: ["subtotal"],
+  components: Button,
 };
 </script>
 

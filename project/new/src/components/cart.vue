@@ -1,6 +1,6 @@
 <template>
   <div class="mainCart">
-    <!-- <h2 class="cartTitle">Your Loadout:</h2>
+    <h2 class="cartTitle">Your Loadout:</h2>
     <p class="errorMessage" v-if="this.subtotal === 0">
       Shrek Says "You didn't buy anything yet loser"
     </p>
@@ -14,7 +14,7 @@
       }}
     </ul>
 
-    <h3>Subtotal:$ {{ subtotal }}</h3> -->
+    <h3>Subtotal:$ {{ subtotal }}</h3>
 
     <Button id="Button-Undo" @button-click="$emit('undo')">Undo</Button>
     <Button id="Button-RemoveAll" @button-click="$emit('removeAll')">
@@ -32,7 +32,11 @@
 import Button from "../components/button.vue";
 export default {
   name: "Cart",
-  props: ["subtotal"],
+  props: {
+    subtotal: Number,
+    orderPrice: Number,
+    order: String,
+  },
   components: Button,
 };
 </script>

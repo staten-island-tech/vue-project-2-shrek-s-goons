@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 button {
   width: 150px;
   height: 40px;

@@ -13,6 +13,9 @@
     />
 
     <Cart
+      :subtotal="this.subtotal"
+      :order="this.order"
+      :orderPrice="this.orderPrice"
       @removeAll="removeAllItems"
       @undo="removeLastItem"
       @checkout="checkout"

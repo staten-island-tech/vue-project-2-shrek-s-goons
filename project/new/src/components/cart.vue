@@ -33,8 +33,8 @@ import Button from "../components/button.vue";
 export default {
   name: "Cart",
   props: {
-    subtotal: Number,
-    orderPrice: Number,
+    subtotal: String,
+    orderPrice: String,
     order: String,
   },
   components: Button,

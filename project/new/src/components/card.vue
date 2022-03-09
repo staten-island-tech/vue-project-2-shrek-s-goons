@@ -4,7 +4,7 @@
     <img class="cardImage" :src="getImage" alt="" />
     <h3>${{ price }}</h3>
     <h4>Tier={{ tier }}</h4>
-    <Button @button-click="$emit('add')">Add to Cart</Button>
+    <Button v-if="user" @button-click="$emit('add')">Add to Cart</Button>
   </div>
 </template>
 

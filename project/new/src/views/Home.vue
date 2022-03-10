@@ -1,6 +1,8 @@
 <template>
   <div class="mainOrder">
-    <h1>Shrek Says"You have a budget of $1000, Spend Wisely"</h1>
+    <p class="budgetWarning">
+      Shrek Says"You have a budget of $1000, Spend Wisely"
+    </p>
 
     <Card
       v-for="(characters, index) in shrekCharacters"

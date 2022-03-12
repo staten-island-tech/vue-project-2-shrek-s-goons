@@ -1,9 +1,5 @@
 <template>
   <div class="mainOrder">
-    <p class="budgetWarning">
-      Shrek Says"You have a budget of $1000, Spend Wisely"
-    </p>
-
     <Card
       v-for="(characters, index) in shrekCharacters"
       :key="index"
@@ -112,12 +108,6 @@ export default {
       this.order.push(this.shrekCharacters[index].name);
       this.orderPrice.push(this.shrekCharacters[index].price);
       this.subtotal = this.subtotal + this.shrekCharacters[index].price;
-      if (this.subtotal > 1000) {
-        this.order = [];
-        this.orderPrice = [];
-        this.subtotal = 0;
-        this.$router.push("about");
-      }
     },
     removeLastItem: function () {
       if (this.order.length !== 0) {

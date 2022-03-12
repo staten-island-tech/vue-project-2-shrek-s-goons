@@ -1,29 +1,24 @@
 .mainOrder {
-  flex: wrap;
+  flex-wrap: wrap;
   display: flex;
   width: 98vw;
   justify-content: space-evenly;
-  margin-left: 5%;
   align-content: center;
   height: 98 vw;
+  align-items: center;
 }
 .container {
   max-width: 960px;
-  margin: 0 auto;
 }
 
-.budgetWarning {
-  width: 90%;
-  position: relative;
-  font-size: 40px;
-  background-color: rgb(2, 3, 2);
-  color: white;
+.form {
+  margin-left: 40%;
 }
 
-h1 {
+.navTitle {
   position: relative;
   font-size: 40px;
-  background-color: rgb(2, 3, 2);
+  background-color: rgb(3, 56, 3);
 }
 
 h2,
@@ -46,6 +41,8 @@ h4 {
 nav {
   display: flex;
   align-items: center;
+  margin-left: 50%;
+  width: 50vw;
 }
 nav h1 {
   margin-right: auto;
@@ -53,7 +50,7 @@ nav h1 {
 nav a,
 nav button,
 nav span {
-  margin-left: 20px;
+  margin-left: 20%;
 }
 nav a {
   color: #444;
@@ -62,6 +59,7 @@ nav a {
 }
 nav span {
   color: #777;
+  margin-left: 10%;
 }
 .top {
   color: black;

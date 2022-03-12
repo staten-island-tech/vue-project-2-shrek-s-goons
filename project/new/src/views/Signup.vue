@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="handleSubmit">
+  <form @submit.prevent="handleSubmit" class="form">
     <h3>Register</h3>
 
     <label for="email">Email:</label>
@@ -8,7 +8,7 @@
     <label for="email">Password:</label>
     <input type="password" name="password" v-model="password" required />
 
-    <button>Register</button>
+    <Button>Register</Button>
     <div v-if="error">{{ error }}</div>
   </form>
 </template>
@@ -16,8 +16,10 @@
 import { useStore } from "vuex";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import Button from "../components/button.vue";
 
 export default {
+  compnents: Button,
   setup() {
     const email = ref("");
     const password = ref("");

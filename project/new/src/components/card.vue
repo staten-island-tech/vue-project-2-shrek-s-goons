@@ -4,7 +4,7 @@
     <img class="cardImage" :src="getImage" alt="" />
     <h3>${{ price }}</h3>
     <h4>Tier={{ tier }}</h4>
-    <Button @button-click="$emit('add')">Add to Cart</Button>
+    <Button @button-click="$emit('add')" class="cartButton">Add to Cart</Button>
   </div>
 </template>
 
@@ -32,22 +32,23 @@ export default {
 
 <style>
 .card {
-  width: 25%;
-  height: 300px;
+  width: 13%;
+  height: 10%;
   background-color: rgb(9, 65, 9);
   border: greenyellow 5px solid;
   text-align: center;
   padding: 15px;
-  flex-direction: crow;
-  justify-content: space-around;
+  flex-direction: collumn;
   box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);
-  flex: wrap;
-  flex-wrap: wrap;
   margin-top: 80px;
   border-radius: 50px;
 }
 .cardImage {
-  max-width: 60px;
+  width: 40%;
+  object-fit: cover;
+}
+
+.cartButton {
   object-fit: cover;
 }
 

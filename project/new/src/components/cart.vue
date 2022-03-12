@@ -44,13 +44,12 @@ export default {
 <style>
 .mainCart {
   width: 500px;
-  margin-top: 600px;
-  position: absolute;
-  bottom: 10px;
-  left: 500px;
+  margin-top: 200px;
+  position: relative;
   width: 700px;
   border: 10px rgb(32, 172, 32) solid;
   border-radius: 30px;
+  background-color: rgb(81, 116, 30);
 }
 
 .cartTitle {

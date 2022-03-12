@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1>The Shrek Project</h1>
+    <h1 class="navTitle">The Shrek Project</h1>
 
     <template v-if="authIsReady">
       <!-- for all users -->

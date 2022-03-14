@@ -102,7 +102,6 @@ export default {
       subtotal: 0,
     };
   },
-
   methods: {
     updateList(index) {
       this.order.push(this.shrekCharacters[index].name);

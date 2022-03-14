@@ -30,12 +30,13 @@
 
 <script>
 import Button from "../components/button.vue";
+import { order, orderPrice, subtotal } from "../views/Home.vue";
 export default {
   name: "Cart",
   props: {
-    subtotal: String,
-    orderPrice: String,
-    order: String,
+    subtotal: subtotal,
+    orderPrice: orderPrice,
+    order: order,
   },
   components: Button,
 };

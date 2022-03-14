@@ -8,7 +8,7 @@
     <label for="email">Password:</label>
     <input type="password" name="password" v-model="password" required />
 
-    <Button>Register</Button>
+    <button>Register</button>
     <div v-if="error">{{ error }}</div>
   </form>
 </template>
@@ -16,10 +16,8 @@
 import { useStore } from "vuex";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import Button from "../components/button.vue";
 
 export default {
-  compnents: Button,
   setup() {
     const email = ref("");
     const password = ref("");

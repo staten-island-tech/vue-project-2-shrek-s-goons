@@ -1,0 +1,153 @@
+<<<<<<< Updated upstream
+=======
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --green: #135613;
+  --black: #000;
+  --light-green: rgba(11, 156, 49, 0.8);
+  --light-black: #222;
+  --white: #fff;
+  --dark-grey: #1a2f41;
+  --grey: #252c30;
+  --light-blue: #2998ff;
+  --light-blue-gradient: #2998ff60;
+  --dark-blue: #135cc5;
+  --dark-blue-gradient: #135cc560;
+  --lightGrey: #f2f4f6;
+  --light-glass-background: rgba(255, 255, 255, 0.4);
+  --light-glass-border: rgba(255, 255, 255, 0.4);
+  --dark-glass-background: rgba(0, 0, 0, 0.4);
+  --dark-glass-border: rgba(0, 0, 0, 0.4);
+  --btn: var(--light-black);
+  --glass-background: var(--light-glass-background);
+  --glass-border: var(--light-glass-border);
+  --background-primary: var(--light-black);
+  --card-background: var(--black);
+  --card-text: var(--white);
+  --background-secondary: var(--dark-grey);
+  --text-primary: var(--green);
+  --text-secondary: var(--white);
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --smallText: 0.8rem;
+  --dark-shadow: 0px 0px 6px 6px var(--orange);
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-2-white: 0 4px 6px -1px rgba(255, 255, 255, 0.1),
+    0 2px 4px -1px rgba(255, 255, 255, 0.1);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --containerPadding: 2.5%;
+  --headerHeight: 3rem;
+  --borderRadius: 10px;
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+  color: black;
+}
+h5 {
+  font-size: var(--h5);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+.mainOrder {
+  flex-wrap: wrap;
+  display: flex;
+  width: 98vw;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 98 vw;
+  align-items: center;
+}
+.container {
+  max-width: 960px;
+}
+
+.form {
+  margin-left: 40%;
+}
+
+.navTitle {
+  position: relative;
+  font-size: 40px;
+  background-color: var(--black);
+}
+
+.list {
+  color: black;
+}
+
+.shrek {
+  max-width: 30%;
+  position: relative;
+  left: 475px;
+  bottom: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+  width: 50vw;
+}
+nav h1 {
+  margin-right: auto;
+}
+nav a,
+nav button,
+nav span {
+  margin-left: 20%;
+}
+nav a {
+  color: var(--dark-grey);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav span {
+  color: var(--grey);
+  margin-left: 10%;
+}
+.top {
+  color: var(--black);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: var(--black);
+}
+form button {
+  display: block;
+  margin-top: 20px;
+}
+>>>>>>> Stashed changes

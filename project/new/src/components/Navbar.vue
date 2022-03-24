@@ -16,7 +16,6 @@
       <div v-if="!user">
         <router-link to="/login">Login</router-link>
         <router-link to="/signup">Register</router-link>
-        <router-link to="/clicker">Clicker</router-link>
       </div>
     </template>
   </nav>

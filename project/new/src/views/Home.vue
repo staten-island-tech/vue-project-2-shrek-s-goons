@@ -1,8 +1,4 @@
 <template>
-<<<<<<< Updated upstream
-  <div>
-    <Button @button-click="add">Yes</Button>
-=======
   <div class="mainOrder">
     <Clicker></Clicker>
 
@@ -24,7 +20,6 @@
       @undo="removeLastItem"
       @checkout="checkout"
     />
->>>>>>> Stashed changes
   </div>
 </template>
 

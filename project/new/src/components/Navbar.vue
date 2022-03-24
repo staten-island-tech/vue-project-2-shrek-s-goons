@@ -5,7 +5,7 @@
     <template v-if="authIsReady">
       <!-- for all users -->
       <div>
-        <router-link to="/">Home</router-link>
+        <router-link to="/" class="home">Home</router-link>
       </div>
       <!-- for logged in users -->
       <div v-if="user">
@@ -14,9 +14,9 @@
       </div>
       <!-- for logged out users -->
       <div v-if="!user">
-        <router-link to="/login">Login</router-link>
-        <router-link to="/signup">Register</router-link>
-        <router-link to="/clicker">Clicker</router-link>
+        <router-link to="/login" class="login">Login</router-link>
+        <router-link to="/signup" class="signup">Register</router-link>
+        <router-link to="/clicker" class="clicker">Clicker</router-link>
       </div>
     </template>
   </nav>
@@ -39,3 +39,13 @@ export default {
   },
 };
 </script>
+<style>
+.home,
+.login,
+.signup,
+.clicker {
+  background-color: black;
+  color: var(--green);
+}
+
+</style>

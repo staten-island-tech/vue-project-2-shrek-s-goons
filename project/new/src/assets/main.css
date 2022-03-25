@@ -96,19 +96,17 @@ h5 {
 
 .navTitle {
   position: relative;
-  font-size: 40px;
-  background-color: rgb(3, 56, 3);
+  font-size: var(--h1);
+  background-color: var(--green);
 }
 
 .list {
-  color: black;
+  color: var(--black);
 }
 
 .shrek {
   max-width: 30%;
-  position: absolute;
-  left: 475px;
-  bottom: 20px;
+  position: relative;
 }
 
 nav {
@@ -126,23 +124,23 @@ nav span {
   margin-left: 20%;
 }
 nav a {
-  color: #444;
+  color: var(--grey);
   text-decoration: none;
   font-weight: bold;
 }
 nav span {
-  color: #777;
+  color: var(--light-blue-gradient);
   margin-left: 10%;
 }
 .top {
-  color: black;
+  color: var(--black);
 }
 
 label {
   display: block;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: black;
+  color: var(--black);
 }
 form button {
   display: block;

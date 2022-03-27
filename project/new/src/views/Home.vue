@@ -28,7 +28,7 @@ import Cart from "../components/cart.vue";
 export default {
   name: "Home",
   components: {
-    Card: Card,
+    Card,
     Cart,
   },
   data: function () {
@@ -102,6 +102,7 @@ export default {
       subtotal: 0,
     };
   },
+
   methods: {
     updateList(index) {
       this.order.push(this.shrekCharacters[index].name);

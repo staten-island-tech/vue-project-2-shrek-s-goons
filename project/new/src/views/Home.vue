@@ -1,5 +1,6 @@
 <template>
   <div class="mainOrder">
+    <Clicker>New clicker</Clicker>
     <Card
       v-for="(characters, index) in shrekCharacters"
       :key="index"
@@ -24,12 +25,14 @@
 <script>
 import Card from "../components/card.vue";
 import Cart from "../components/cart.vue";
+import Clicker from "../components/clicker.vue";
 
 export default {
   name: "Home",
   components: {
     Card,
     Cart,
+    Clicker,
   },
   data: function () {
     return {

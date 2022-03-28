@@ -44,8 +44,9 @@ export default {
 .login,
 .signup,
 .clicker {
-  background-color: black;
+  background-color: var(--black);
   color: var(--green);
+  font-size: var(--h3);
 }
 
 </style>

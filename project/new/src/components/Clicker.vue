@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <button class="moneyAdder" v-on:click="counter += 1">
-      Add One More Click
-    </button>
+  <div class="moneyAdder">
+    <button v-on:click="counter += 1">Add One More Click</button>
     <p>The button has been clicked {{ counter }} times</p>
   </div>
 </template>
@@ -19,5 +17,6 @@ export default {
 </script>
 <style>
 .moneyAdder {
+  position: relative;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="mainOrder">
-    <Clicker>New clicker</Clicker>
+    <Clicker />
     <Card
       v-for="(characters, index) in shrekCharacters"
       :key="index"
@@ -11,28 +11,26 @@
       @add="updateList(index)"
     />
 
-    <Cart
+    <!-- <Cart
       :subtotal="this.subtotal"
       :order="this.order"
       :orderPrice="this.orderPrice"
       @removeAll="removeAllItems"
       @undo="removeLastItem"
       @checkout="checkout"
-    />
+    /> -->
   </div>
 </template>
 
 <script>
 import Card from "../components/card.vue";
-import Cart from "../components/cart.vue";
-import clicker from "../components/clicker.vue";
+import Clicker from "../components/clicker.vue";
 
 export default {
   name: "Home",
   components: {
     Card,
-    Cart,
-    clicker,
+    Clicker,
   },
   data: function () {
     return {

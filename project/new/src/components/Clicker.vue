@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "clicker",
+  name: "Clicker",
   data: function () {
     return {
       counter: 0,

@@ -1,6 +1,6 @@
 <template>
-  <div class="mainOrder">
-    <Clicker />
+  <div>
+    <Clicker class="moneyAdder" />
     <Card
       v-for="(characters, index) in shrekCharacters"
       :key="index"
@@ -9,6 +9,7 @@
       :tier="characters.tier"
       :image="characters.image"
       @add="updateList(index)"
+      class="mainOrder"
     />
 
     <!-- <Cart

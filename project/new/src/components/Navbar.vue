@@ -1,6 +1,7 @@
 <template>
   <nav>
     <h1 class="navTitle">The Shrek Project</h1>
+    <h2 class="points">{{ points }}</h2>
 
     <template v-if="authIsReady">
       <!-- for all users -->
@@ -35,6 +36,12 @@ export default {
       user: computed(() => store.state.user),
       authIsReady: computed(() => store.state.authIsReady),
     };
+  },
+
+  computed: {
+    points() {
+      return this.$store.state.points;
+    },
   },
 };
 </script>

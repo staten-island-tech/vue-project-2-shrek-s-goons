@@ -13,8 +13,12 @@ const store = createStore({
   state: {
     user: null,
     authIsReady: false,
+    points: 0,
   },
   mutations: {
+    updatePoints(state, payload) {
+      state.points = state.points + payload;
+    },
     setUser(state, payload) {
       state.user = payload;
       console.log("user state changed :", state.user);

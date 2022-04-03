@@ -25,14 +25,14 @@
 <script>
 import Card from "../components/card.vue";
 import Cart from "../components/cart.vue";
-import Clicker from "../components/clicker.vue";
+import clicker from "../components/clicker.vue";
 
 export default {
   name: "Home",
   components: {
     Card,
     Cart,
-    Clicker,
+    clicker,
   },
   data: function () {
     return {

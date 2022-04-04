@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="updatePoints(25)">
+    <div @click="updatePoints(5)">
       <img
         src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
         id="farquaad"

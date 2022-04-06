@@ -91,9 +91,6 @@ h5 {
   position: fixed;
   left: 50rem;
 }
-.container {
-  max-width: 960px;
-}
 
 .form {
   margin-left: 40%;
@@ -114,6 +111,14 @@ h5 {
   position: relative;
 }
 
+.container {
+  max-width: 30%;
+}
+
+#app {
+  align-content: space-around;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -121,7 +126,7 @@ nav {
   width: 50vw;
 }
 nav h1 {
-  margin-right: auto;
+  margin-left: 20%;
 }
 nav a,
 nav button,

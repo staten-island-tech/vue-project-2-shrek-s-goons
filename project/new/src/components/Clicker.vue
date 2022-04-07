@@ -29,5 +29,11 @@ export default {
 <style>
 #farquaad {
   position: relative;
+  border-radius: 5rem;
+}
+
+#farquaad:hover {
+  background-image: url(https://media.prusaprinters.org/media/prints/121034/images/1172473_dda63251-6fae-4e99-bf24-14ab1995ec16/thumbs/cover/1280x960/png/shrekbotton_2022-jan-19_02-30-43pm-000_customized.webp)
+    no-repeat;
 }
 </style>

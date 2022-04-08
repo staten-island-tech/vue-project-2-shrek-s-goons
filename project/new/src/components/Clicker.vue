@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <div>
-      <button @click="updatePoints(5)">
-        <img
-          src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
-          id="farquaad"
-        />
-      </button>
-    </div>
+  <div @click="updatePoints(5)" id="farquaad">
+    <img
+      src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
+    />
   </div>
 </template>
 
@@ -26,7 +21,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 #farquaad {
   position: relative;
   border-radius: 5rem;

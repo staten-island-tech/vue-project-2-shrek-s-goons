@@ -93,13 +93,17 @@ h5 {
 }
 
 .form {
-  margin-left: 40%;
+  margin-left: 90%;
+  background-color: var(--light-green);
+  border-radius: 2rem;
+  border: var(--white) solid 0.5rem;
+  width: 30rem;
 }
 
 .navTitle {
   position: relative;
   font-size: var(--h1);
-  background-color: var(--green);
+  background-color: var(--light-green);
   border-radius: 5rem;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -115,7 +119,7 @@ h5 {
 }
 
 .container {
-  max-width: 30%;
+  max-width: 20%;
 }
 
 #app {

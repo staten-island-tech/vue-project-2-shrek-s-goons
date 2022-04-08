@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <button @click="updatePoints(5)">
+      <button @click="updatePoints(5)" class="farquaad-button">
         <img
           src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
           id="farquaad"
@@ -27,6 +27,9 @@ export default {
 };
 </script>
 <style>
+.farquaad-button {
+  size: 10rem;
+}
 #farquaad {
   position: relative;
   border-radius: 5rem;

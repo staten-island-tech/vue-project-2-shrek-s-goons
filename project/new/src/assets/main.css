@@ -78,33 +78,55 @@ h5 {
 }
 
 .moneyAdder {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  z-index: 2;
+}
+
+#farquaad{
+  transition: 0.3s;
+}
+
+#farquaad:hover{
+  size: 150%;
+}
+
+.points{
   position: relative;
+  align-self: center;
+  width: 24vw;
+  background-color: var(--light-green);
 }
 
 .mainOrder {
   flex-wrap: wrap;
-  display: flex;
-  width: 50vw;
-  justify-content: space-evenly;
+  display: block;
+  width: 25vw;
+  justify-content:center;
   align-content: center;
   align-items: center;
-  position: fixed;
-  left: 50rem;
+  position: relative;
+  overflow-y: auto;
+  height:79rem;
+  background-color: var(--grey);
+  z-index: 1;
 }
 
 .form {
   margin-left: 90%;
   background-color: var(--light-green);
   border-radius: 2rem;
-  border: var(--white) solid 0.5rem;
+  border: var(--black) solid 0.5rem;
   width: 30rem;
+  margin-top: 10rem;
 }
 
 .navTitle {
   position: relative;
   font-size: var(--h1);
   background-color: var(--light-green);
-  border-radius: 5rem;
+  border-radius: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -123,15 +145,15 @@ h5 {
 }
 
 #app {
-  align-content: space-around;
-  background-color: var(--black);
+  background-color: var(--white);
+  height: 8vw;
 }
 
 nav {
   display: flex;
   align-items: center;
-  margin-left: 50%;
-  width: 70vw;
+  width: 100vw;
+  background-color: var(--black);
 }
 nav h1 {
   margin-left: 20%;
@@ -140,7 +162,7 @@ nav h1 {
 nav a,
 nav button,
 nav span {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 nav a {
   color: var(--grey);

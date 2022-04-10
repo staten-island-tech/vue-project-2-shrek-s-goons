@@ -31,16 +31,15 @@ export default {
 
 <style>
 .card {
-  width: 13%;
-  height: 10%;
+  width: 80%;
+  height: 40rem;
   background-color: rgb(9, 65, 9);
-  border: greenyellow 5px solid;
+  border: greenyellow 0.5rem solid;
   text-align: center;
-  padding: 15px;
-  flex-direction: collumn;
   box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);
-  margin-top: 80px;
-  border-radius: 50px;
+  margin-top: 8rem;
+  border-radius: 5rem;
+  margin-left: 5rem;
 }
 .cardImage {
   width: 40%;

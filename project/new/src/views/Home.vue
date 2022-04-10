@@ -1,17 +1,19 @@
 <template>
-  <div class="mainOrder">
+  <div>
     <Clicker class="moneyAdder" />
-    <Card
-      v-for="(characters, index) in shrekCharacters"
-      :key="index"
-      :title="characters.name"
-      :price="characters.price"
-      :tier="characters.tier"
-      :image="characters.image"
-      @add="updateList(index)"
-    />
+    <div class="mainOrder">
+      <h2 class="points">Balance: ${{ points }}</h2>
+      <Card
+        v-for="(characters, index) in shrekCharacters"
+        :key="index"
+        :title="characters.name"
+        :price="characters.price"
+        :tier="characters.tier"
+        :image="characters.image"
+        @add="updateList(index)"
+      />
 
-    <!-- <Cart
+      <!-- <Cart
       :subtotal="this.subtotal"
       :order="this.order"
       :orderPrice="this.orderPrice"
@@ -19,6 +21,7 @@
       @undo="removeLastItem"
       @checkout="checkout"
     /> -->
+    </div>
   </div>
 </template>
 

@@ -3,15 +3,28 @@
     <h2>{{ title }}</h2>
     <img class="cardImage" :src="getImage" alt="" />
     <h4>Tier={{ tier }}</h4>
-    <Button @button-click="$emit('add')" class="cartButton">{{ price }}</Button>
+    <Button v-if="user" @button-click="$emit('add')" class="cartButton">{{
+      price
+    }}</Button>
   </div>
 </template>
 
 <script>
 import Button from "../components/button.vue";
+import { useStore } from "vuex";
+import { computed, ref } from "vue";
 
 export default {
   name: "Card",
+  setup() {
+    const any = ref([]);
+    const store = useStore();
+
+    return {
+      any,
+      user: computed(() => store.state.user),
+    };
+  },
   components: {
     Button: Button,
   },

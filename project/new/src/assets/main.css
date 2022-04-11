@@ -159,11 +159,25 @@ nav h1 {
   margin-left: 20%;
   margin-right: 20%;
 }
+
+.logoutButton,
 nav a,
 nav button,
 nav span {
   margin-left: 10%;
+  margin-bottom: 10rem;
+
 }
+
+.logoutSection{
+  background-color: var(--light-green);
+  margin-left: 3rem;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 2rem;
+}
+
+.logoutButton,
 nav a {
   color: var(--grey);
   font-weight: bold;
@@ -175,12 +189,13 @@ nav a {
 
 nav a:hover {
   background-color: var(--green);
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 nav span {
-  color: var(--light-blue-gradient);
+  color: var(--white);
   margin-left: 10%;
+  font-size: 2rem;
 }
 .top {
   color: var(--black);

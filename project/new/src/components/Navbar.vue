@@ -8,9 +8,9 @@
         <router-link to="/">Home</router-link>
       </div>
       <!-- for logged in users -->
-      <div v-if="user">
+      <div v-if="user" class="logoutSection">
         <span>Logged in as {{ user.email }}</span>
-        <button @click="handleClick">Logout</button>
+        <button class="logoutButton" @click="handleClick">Logout</button>
       </div>
       <!-- for logged out users -->
       <div v-if="!user">

@@ -8,6 +8,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
+import { db } from "../firebase/config";
 
 const store = createStore({
   state: {
@@ -35,6 +36,11 @@ const store = createStore({
       const res = await createUserWithEmailAndPassword(auth, email, password);
       if (res) {
         context.commit("setUser", res.user);
+        var userUid = auth.currentUser.uid;
+
+        db.collection("users").doc(userUid).set({
+          points: 0,
+        });
       } else {
         throw new Error("could not complete signup");
       }
@@ -64,6 +70,10 @@ const unsub = onAuthStateChanged(auth, (user) => {
   store.commit("setAuthIsReady", true);
   store.commit("setUser", user);
   unsub();
+});
+
+const getfirestoreData = onAuthStateChanged(auth, (user) => {
+  store.commit();
 });
 
 export default store;

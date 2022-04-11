@@ -53,22 +53,28 @@ body,
   --headerHeight: 3rem;
   --borderRadius: 10px;
 }
+
 h1 {
   font-size: var(--h1);
 }
+
 h2 {
   font-size: var(--h2);
 }
+
 h3 {
   font-size: var(--h3);
 }
+
 h4 {
   font-size: var(--h4);
   color: black;
 }
+
 h5 {
   font-size: var(--h5);
 }
+
 h1,
 h2,
 h3,
@@ -84,15 +90,15 @@ h5 {
   z-index: 2;
 }
 
-#farquaad{
+#farquaad {
   transition: 0.3s;
 }
 
-#farquaad:hover{
+#farquaad:hover {
   size: 150%;
 }
 
-.points{
+.points {
   position: relative;
   align-self: center;
   width: 24vw;
@@ -103,12 +109,12 @@ h5 {
   flex-wrap: wrap;
   display: block;
   width: 25vw;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
   overflow-y: auto;
-  height:79rem;
+  height: 79rem;
   background-color: var(--grey);
   z-index: 1;
 }
@@ -155,6 +161,7 @@ nav {
   width: 100vw;
   background-color: var(--black);
 }
+
 nav h1 {
   margin-left: 20%;
   margin-right: 20%;
@@ -169,7 +176,7 @@ nav span {
 
 }
 
-.logoutSection{
+.logoutSection {
   background-color: var(--light-green);
   margin-left: 3rem;
   width: 40rem;
@@ -197,6 +204,7 @@ nav span {
   margin-left: 10%;
   font-size: 2rem;
 }
+
 .top {
   color: var(--black);
 }
@@ -207,7 +215,33 @@ label {
   margin-top: 20px;
   color: var(--black);
 }
+
 form button {
   display: block;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1800px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 1500px) {
+  .mainOrder {
+    height: 62.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainOrder {
+    height: 46.5rem;
+    /* width: 25vw; We're going to have to split up the mainorder component so we can adjust the width*/
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 400px) {
+  .mainOrder {}
 }

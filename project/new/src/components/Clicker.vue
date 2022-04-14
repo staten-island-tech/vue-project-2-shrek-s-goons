@@ -1,8 +1,8 @@
 <template>
   <div @click="updatePoints(5)" class="Image">
-    <div class="overlay">
+    <!-- <div class="overlay">
       <div class="text">Hello World</div>
-    </div>
+    </div> -->
     <img
       src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
     />
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 <style>
-.Image:hover .overlay {
+/* .Image:hover .overlay {
   opacity: 1;
 }
 .overlay {
@@ -50,5 +50,5 @@ export default {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 </style>

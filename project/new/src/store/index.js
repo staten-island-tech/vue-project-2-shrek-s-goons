@@ -97,7 +97,7 @@ const store = createStore({
     },
   },
   actions: {
-    fetchPoints({ commit }) {
+    async fetchPoints({ commit }) {
       var userUid = auth.currentUser.uid;
       db.collection
         .doc(userUid)

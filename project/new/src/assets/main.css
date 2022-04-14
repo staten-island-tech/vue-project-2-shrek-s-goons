@@ -173,7 +173,6 @@ nav button,
 nav span {
   margin-left: 10%;
   margin-bottom: 10rem;
-
 }
 
 .logoutSection {
@@ -188,7 +187,7 @@ nav span {
 nav a {
   color: var(--grey);
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: var(--lightGrey);
   transition: 0.4s;
   border-radius: 0.5rem;
@@ -222,7 +221,8 @@ form button {
 }
 
 @media screen and (max-width: 1800px) {
-  .mainOrder {}
+  .mainOrder {
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -239,9 +239,11 @@ form button {
 }
 
 @media screen and (max-width: 768px) {
-  .mainOrder {}
+  .mainOrder {
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .mainOrder {}
+  .mainOrder {
+  }
 }

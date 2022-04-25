@@ -122,11 +122,17 @@ const store = createStore({
       const res = await createUserWithEmailAndPassword(auth, email, password);
       if (res) {
         context.commit("setUser", res.user);
-        var userUid = auth.currentUser.uid;
+        /*   var user = auth().currentUser;
+        user
+          .updateProfile({
+            points: 8,
+          })
+          .then(console.log(user)); */
+        /*   var userUid = auth.currentUser.uid;
 
         db.collection.doc(userUid).add({
           points: 0,
-        });
+        }); */
       } else {
         throw new Error("could not complete signup");
       }

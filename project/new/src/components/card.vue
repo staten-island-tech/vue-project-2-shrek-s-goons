@@ -2,9 +2,8 @@
   <div class="card">
     <h2>{{ title }}</h2>
     <img class="cardImage" :src="getImage" alt="" />
-    <h3>${{ price }}</h3>
     <h4>Tier={{ tier }}</h4>
-    <Button @button-click="$emit('add')" class="cartButton">Add to Cart</Button>
+    <Button @button-click="$emit('add')" class="cartButton">{{ price }}</Button>
   </div>
 </template>
 

@@ -17,7 +17,7 @@
         <router-link to="/signup" class="signup">Register</router-link>
         <router-link to="/clicker" class="clicker">Clicker</router-link>
       </div>
-         <!-- <div id="root" class="container">
+      <!-- <div id="root" class="container">
 
   <tabs>
     <tab name="Services" :selected="true">
@@ -50,6 +50,12 @@ export default {
       user: computed(() => store.state.user),
       authIsReady: computed(() => store.state.authIsReady),
     };
+  },
+
+  computed: {
+    points() {
+      return this.$store.state.points;
+    },
   },
 };
 // Vue.component('tabs', {
@@ -134,5 +140,4 @@ export default {
   color: var(--green);
   font-size: var(--h3);
 }
-
 </style>

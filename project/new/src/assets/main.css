@@ -118,13 +118,28 @@ h5 {
   background-color: var(--grey);
   z-index: 1;
 }
-
+.emailLogin {
+  font-size: 2rem;
+}
+.passwordLogin {
+  font-size: 2rem;
+}
+.inputEmail {
+  font-size: 2rem;
+  width: 40rem;
+  height: 4rem;
+}
+.inputPassword {
+  font-size: 2rem;
+  width: 40rem;
+  height: 4rem;
+}
 .form {
   margin-left: 90%;
   background-color: var(--light-green);
   border-radius: 2rem;
   border: var(--black) solid 0.5rem;
-  width: 30rem;
+  width: 50rem;
   margin-top: 10rem;
 }
 

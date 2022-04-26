@@ -122,6 +122,12 @@ const store = createStore({
       const res = await createUserWithEmailAndPassword(auth, email, password);
       if (res) {
         context.commit("setUser", res.user);
+        var user = {
+          uid: res.uid,
+          email: res.email,
+          points: 0,
+        };
+        writeUserData(user);
         /*   var user = auth().currentUser;
         user
           .updateProfile({
@@ -164,5 +170,15 @@ const unsub = onAuthStateChanged(auth, (user) => {
 });
 
 store.dispatch("fetchPoints");
+
+function writeUserData(user) {
+  firebase
+    .db()
+    .ref("users/" + user.uid)
+    .set(user)
+    .catch((error) => {
+      console.log(error.message);
+    });
+}
 
 export default store;

@@ -26,10 +26,10 @@ export default {
 </script>
 <style>
 .ROCK{
-  height: 400px;
+  height: 500px;
 }
 .BTN {
-  margin-left: 200px;
+  margin-left: 175px;
   font-size: 20px;
   border-radius: 20px;
   border: white solid 4px;

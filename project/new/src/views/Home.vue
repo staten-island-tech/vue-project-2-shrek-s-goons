@@ -27,7 +27,7 @@
 
 <script>
 import Card from "../components/card.vue";
-import Clicker from "../components/clicker.vue";
+import Clicker from "../components/Clicker.vue";
 import { useStore } from "vuex";
 import { computed, ref } from "vue";
 

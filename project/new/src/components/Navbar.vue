@@ -1,7 +1,6 @@
 <template>
   <nav>
     <h1 class="navTitle">The Shrek Project</h1>
-    <h2 class="points">{{ points }}</h2>
 
     <template v-if="authIsReady">
       <!-- for all users -->
@@ -9,9 +8,9 @@
         <router-link to="/">Home</router-link>
       </div>
       <!-- for logged in users -->
-      <div v-if="user">
+      <div v-if="user" class="logoutSection">
         <span>Logged in as {{ user.email }}</span>
-        <button @click="handleClick">Logout</button>
+        <button class="logoutButton" @click="handleClick">Logout</button>
       </div>
       <!-- for logged out users -->
       <div v-if="!user">
@@ -31,17 +30,12 @@ export default {
     const handleClick = () => {
       store.dispatch("logout");
     };
+
     return {
       handleClick,
       user: computed(() => store.state.user),
       authIsReady: computed(() => store.state.authIsReady),
     };
-  },
-
-  computed: {
-    points() {
-      return this.$store.state.points;
-    },
   },
 };
 </script>

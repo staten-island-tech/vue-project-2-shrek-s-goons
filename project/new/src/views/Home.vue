@@ -1,8 +1,8 @@
 <template>
   <div>
     <Clicker class="moneyAdder" />
+    <h2 class="points">Balance: ${{ points }}</h2>
     <div class="mainOrder">
-      <h2 class="points">Balance: ${{ points }}</h2>
       <Card
         v-for="(characters, index) in shrekCharacters"
         :key="index"
@@ -27,7 +27,7 @@
 
 <script>
 import Card from "../components/card.vue";
-import Clicker from "../components/clicker.vue";
+import Clicker from "../components/Clicker.vue";
 import { useStore } from "vuex";
 import { computed, ref } from "vue";
 

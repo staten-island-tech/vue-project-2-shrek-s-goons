@@ -1,12 +1,10 @@
 <template>
-  <div @click="updatePoints(5)" class="Image">
-    <!-- <div class="overlay">
-      <div class="text">Hello World</div>
-    </div> -->
-    <img
-      src="https://cdn3.whatculture.com/images/2016/11/2b8e454952845957-600x338.jpg"
+
+  <button @click="updatePoints(5), audio()" class="BTN">
+  <img class="ROCK"
+      src="https://res.cloudinary.com/teepublic/image/private/s--yCiRU3FK--/c_crop,x_10,y_10/c_fit,w_830/c_crop,g_north_west,h_1038,w_1038,x_-104,y_-128/l_upload:v1565806151:production:blanks:vdbwo35fw6qtflw9kezw/fl_layer_apply,g_north_west,x_-215,y_-239/b_rgb:000000/c_limit,f_jpg,h_630,q_90,w_630/v1588017884/production/designs/9553847_0.jpg"
     />
-  </div>
+  </button>
 </template>
 
 <script>
@@ -16,6 +14,9 @@ export default {
     updatePoints(points) {
       this.$store.commit("updatePoints", points);
     },
+    audio(){
+      console.log("YO");
+    }
   },
   computed: {
     points() {
@@ -25,5 +26,21 @@ export default {
 };
 </script>
 <style>
-
+.ROCK{
+  height: 500px;
+}
+.BTN {
+  margin-left: 175px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: white solid 4px;
+  background-color: white;
+  transition: 0.5s;
+}
+.BTN:hover {
+  transform: scale(1.1);
+}
+.BTN:active {
+  transform: scale(0.9);
+}
 </style>

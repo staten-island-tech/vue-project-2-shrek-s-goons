@@ -1,8 +1,8 @@
 <template>
   <div>
     <Clicker class="moneyAdder" />
+    <h2 class="points">Balance: ${{ points }}</h2>
     <div class="mainOrder">
-      <h2 class="points">Balance: ${{ points }}</h2>
       <Card
         v-for="(characters, index) in shrekCharacters"
         :key="index"

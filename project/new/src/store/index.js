@@ -98,9 +98,13 @@ const store = createStore({
   },
   actions: {
     async fetchPoints({ commit }) {
-      var userUid = auth.currentUser.uid;
+      var user = {
+        uid: auth.currentUser.uid,
+        email: auth.currentUser.email,
+        points: 0,
+      };
       db.collection
-        .doc(userUid)
+        .doc(user.uid)
         .get()
         .then((querySnapshot) => {
           if (querySnapshot.empty) {
@@ -172,9 +176,7 @@ const unsub = onAuthStateChanged(auth, (user) => {
 store.dispatch("fetchPoints");
 
 function writeUserData(user) {
-  firebase
-    .db()
-    .ref("users/" + user.uid)
+  db.ref("users/" + user.uid)
     .set(user)
     .catch((error) => {
       console.log(error.message);

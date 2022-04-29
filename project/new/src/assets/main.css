@@ -101,7 +101,7 @@ h5 {
 .points {
   position: relative;
   align-self: center;
-  width: 24vw;
+  width: 25vw;
   background-color: var(--light-green);
 }
 
@@ -118,22 +118,27 @@ h5 {
   background-color: var(--grey);
   z-index: 1;
 }
+
 .emailLogin {
   font-size: 2rem;
 }
+
 .passwordLogin {
   font-size: 2rem;
 }
+
 .inputEmail {
   font-size: 2rem;
   width: 40rem;
   height: 4rem;
 }
+
 .inputPassword {
   font-size: 2rem;
   width: 40rem;
   height: 4rem;
 }
+
 .form {
   margin-left: 90%;
   background-color: var(--light-green);
@@ -150,6 +155,7 @@ h5 {
   border-radius: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 10rem;
 }
 
 .list {
@@ -202,9 +208,9 @@ nav span {
 nav a {
   color: var(--grey);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   background-color: var(--lightGrey);
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 0.5rem;
 }
 
@@ -236,8 +242,7 @@ form button {
 }
 
 @media screen and (max-width: 1800px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }
 
 @media screen and (max-width: 1500px) {
@@ -254,11 +259,9 @@ form button {
 }
 
 @media screen and (max-width: 768px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }
 
 @media screen and (max-width: 400px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }

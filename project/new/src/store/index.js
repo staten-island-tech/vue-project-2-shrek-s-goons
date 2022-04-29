@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
+  getAuth,
 } from "firebase/auth";
 import { db } from "../firebase/config";
 
@@ -31,6 +32,7 @@ const store = createStore({
         name: "Shrek 3",
         price: 64000,
         tier: "S",
+
         image:
           "https://media.sketchfab.com/models/15753cc5826d4a94830309cf5c8c290d/thumbnails/e99812c5d5844413a32861469ca24f21/b72b6385ce704c63b8417ea922cfe594.jpeg",
       },
@@ -98,6 +100,7 @@ const store = createStore({
   },
   actions: {
     async fetchPoints({ commit }) {
+      const auth = getAuth();
       var user = {
         uid: auth.currentUser.uid,
         email: auth.currentUser.email,

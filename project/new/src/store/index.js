@@ -128,24 +128,11 @@ const store = createStore({
       //async code
       const res = await createUserWithEmailAndPassword(auth, email, password);
       if (res) {
-        context.commit("setUser", res.user);
-        var user = {
-          uid: res.uid,
-          email: res.email,
-          points: 0,
-        };
-        writeUserData(user);
-        /*   var user = auth().currentUser;
-        user
-          .updateProfile({
-            points: 8,
-          })
-          .then(console.log(user)); */
-        /*   var userUid = auth.currentUser.uid;
-
-        db.collection.doc(userUid).add({
-          points: 0,
-        }); */
+        context.commit("setUser", res.user).then((cred) => {
+          return db.collection("users").doc(cred.user.uid).set({
+            points: this.points,
+          });
+        });
       } else {
         throw new Error("could not complete signup");
       }
@@ -178,12 +165,12 @@ const unsub = onAuthStateChanged(auth, (user) => {
 
 store.dispatch("fetchPoints");
 
-function writeUserData(user) {
-  db.ref("users/" + user.uid)
-    .set(user)
-    .catch((error) => {
-      console.log(error.message);
-    });
-}
+// function writeUserData(user) {
+//   db.ref("users/" + user.uid)
+//     .set(user)
+//     .catch((error) => {
+//       console.log(error.message);
+//     });
+// }
 
 export default store;

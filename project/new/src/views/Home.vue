@@ -37,8 +37,13 @@ export default {
     };
   },
 
-  methods: {},
-  //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then remove button.
+  methods: {
+    //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then remove button.
+    removeCard(index) {
+      if()
+    },
+  },
+
   computed: {
     points() {
       return this.$store.state.points;

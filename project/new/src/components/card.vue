@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <img class="cardImage" :src="getImage" alt="" />
     <h4>Tier={{ tier }}</h4>
-    <Button v-if="user" @button-click="$emit('add')" class="cartButton">{{
+    <Button v-if="user" @button-click="$emit('remove')" class="cartButton">{{
       price
     }}</Button>
   </div>
@@ -68,4 +68,5 @@ h1 {
 }
 </style>
 
-// either we put an index system for each button created or we add a property to each tier
+// either we put an index system for each button created or we add a property to
+each tier

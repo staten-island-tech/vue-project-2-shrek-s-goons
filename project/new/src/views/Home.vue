@@ -10,7 +10,7 @@
         :price="characters.price"
         :tier="characters.tier"
         :image="characters.image"
-        @add="updateList(index)"
+        @remove="removeCard(index)"
       />
     </div>
   </div>
@@ -37,15 +37,8 @@ export default {
     };
   },
 
-  methods: {
-    //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then remove button.
-    //   removeCard() {
-    //     if {
-    //     }
-    //     else{
-    //     }
-    //   },
-  },
+  methods: {},
+  //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then remove button.
   computed: {
     points() {
       return this.$store.state.points;

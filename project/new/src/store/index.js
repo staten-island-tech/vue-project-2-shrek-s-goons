@@ -126,13 +126,17 @@ const store = createStore({
       console.log("signup action");
 
       //async code
-      const res = await createUserWithEmailAndPassword(auth, email, password);
-      if (res) {
-        context.commit("setUser", res.user).then((cred) => {
-          return db.collection("users").doc(cred.user.uid).set({
-            points: this.points,
-          });
+      const res = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      ).then((cred) => {
+        return db.collection("users").doc(cred.user.uid).set({
+          points: this.points,
         });
+      });
+      if (res) {
+        context.commit("setUser", res.user);
       } else {
         throw new Error("could not complete signup");
       }
@@ -165,12 +169,10 @@ const unsub = onAuthStateChanged(auth, (user) => {
 
 store.dispatch("fetchPoints");
 
-// function writeUserData(user) {
-//   db.ref("users/" + user.uid)
-//     .set(user)
-//     .catch((error) => {
-//       console.log(error.message);
-//     });
+// function writeUserData(cred) {
+//   return db.collection("users").doc(cred.user.uid).set({
+//     points: this.points,
+//   });
 // }
 
 export default store;

@@ -108,32 +108,41 @@ h5 {
 .mainOrder {
   flex-wrap: wrap;
   display: block;
-  width: 25vw;
+  width: 24vw;
   justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 79rem;
   background-color: var(--grey);
   z-index: 1;
 }
+
+.mainOrder::-webkit-scrollbar {
+  display: none;
+}
+
 .emailLogin {
   font-size: 2rem;
 }
+
 .passwordLogin {
   font-size: 2rem;
 }
+
 .inputEmail {
   font-size: 2rem;
   width: 40rem;
   height: 4rem;
 }
+
 .inputPassword {
   font-size: 2rem;
   width: 40rem;
   height: 4rem;
 }
+
 .form {
   margin-left: 90%;
   background-color: var(--light-green);
@@ -235,14 +244,13 @@ form button {
   margin-top: 20px;
 }
 
-.timer{
+.timer {
   background-color: var(--white);
 }
 
 
 @media screen and (max-width: 1800px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }
 
 @media screen and (max-width: 1500px) {
@@ -259,11 +267,9 @@ form button {
 }
 
 @media screen and (max-width: 768px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }
 
 @media screen and (max-width: 400px) {
-  .mainOrder {
-  }
+  .mainOrder {}
 }

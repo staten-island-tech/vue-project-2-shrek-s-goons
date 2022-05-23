@@ -67,6 +67,3 @@ h1 {
   color: white;
 }
 </style>
-
-// either we put an index system for each button created or we add a property to
-each tier

@@ -10,7 +10,8 @@
         :price="characters.price"
         :tier="characters.tier"
         :image="characters.image"
-        @remove="removeCard(index)"
+        :additiveValue="characters.characterAdditiveValue"
+        @remove="removePoints(index)"
       />
     </div>
   </div>
@@ -39,8 +40,18 @@ export default {
 
   methods: {
     //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then remove button.
-    removeCard(index) {
-      if()
+    removePoints(index) {
+      if (this.points > this.shrekCharacters[index].price) {
+        this.$store.commit("updatePoints", -this.shrekCharacters[index].price);
+        this.shrekCharacters[index].image =
+          "https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg";
+        this.$store.commit(
+          "setAdditiveValue",
+          this.shrekCharacters[index].characterAdditiveValue
+        );
+      } else {
+        alert("Get More Cash");
+      }
     },
   },
 

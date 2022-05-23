@@ -50,7 +50,7 @@ export default {
           this.shrekCharacters[index].characterAdditiveValue
         );
       } else {
-        alert("Get More Cash");
+        alert("Shrek Says Get More Cash");
       }
     },
   },

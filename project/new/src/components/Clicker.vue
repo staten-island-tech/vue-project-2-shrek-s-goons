@@ -27,7 +27,7 @@ export default {
       if (this.user) {
         this.$store.commit("updatePoints", points);
       } else {
-        alert("Log In First");
+        alert("Shrek Says Log In First");
       }
     },
   },

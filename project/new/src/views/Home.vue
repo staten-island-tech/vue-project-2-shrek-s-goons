@@ -47,8 +47,9 @@ export default {
           "https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg";
         this.$store.commit(
           "setAdditiveValue",
-          this.shrekCharacters[index].characterAdditiveValue
+          +this.shrekCharacters[index].characterAdditiveValue
         );
+        this.shrekCharacters[index].price = 0;
       } else {
         alert("Shrek Says Get More Cash");
       }

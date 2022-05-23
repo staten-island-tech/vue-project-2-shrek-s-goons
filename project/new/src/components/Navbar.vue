@@ -5,7 +5,7 @@
     <template v-if="authIsReady">
       <!-- for all users -->
       <div>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">Clicker</router-link>
       </div>
       <!-- for logged in users -->
       <div v-if="user" class="logoutSection">

@@ -87,7 +87,6 @@ const store = createStore({
         characterAdditiveValue: 10,
       },
     ],
-    order: [],
     user: null,
     authIsReady: false,
     points: 0,

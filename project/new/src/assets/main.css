@@ -235,6 +235,11 @@ form button {
   margin-top: 20px;
 }
 
+.timer{
+  background-color: var(--white);
+}
+
+
 @media screen and (max-width: 1800px) {
   .mainOrder {
   }

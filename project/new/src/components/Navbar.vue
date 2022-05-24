@@ -1,11 +1,12 @@
 <template>
   <nav>
     <h1 class="navTitle">The Shrek Project</h1>
+    <!-- <StopWatch class="timer"></StopWatch> -->
 
     <template v-if="authIsReady">
       <!-- for all users -->
       <div>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">Clicker</router-link>
       </div>
       <!-- for logged in users -->
       <div v-if="user" class="logoutSection">
@@ -24,6 +25,7 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
+// import { StopWatch } from "../components/StopWatch.vue";
 export default {
   setup() {
     const store = useStore();
@@ -37,6 +39,7 @@ export default {
       authIsReady: computed(() => store.state.authIsReady),
     };
   },
+  // components: StopWatch,
 };
 </script>
 <style>

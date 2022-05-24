@@ -109,13 +109,13 @@ h5 {
 .mainOrder {
   flex-wrap: wrap;
   display: block;
-  width: 25vw;
+  width: 24vw;
   justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
-  overflow-y: auto;
-  height: 79rem;
+  overflow-y: scroll;
+  height: 65.7rem;
   background-color: var(--grey);
   z-index: 1;
 }
@@ -189,8 +189,8 @@ nav {
 }
 
 nav h1 {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logoutButton,
@@ -249,3 +249,29 @@ form button {
 .timer {
   background-color: var(--white);
 }
+=======
+}
+
+
+/* @media screen and (max-width: 1800px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 1500px) {
+  .mainOrder {
+    height: 62.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainOrder {
+    height: 46.5rem;
+
+
+/* @media screen and (max-width: 768px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 400px) {
+  .mainOrder {}
+} */

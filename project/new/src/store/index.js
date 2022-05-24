@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
+  getAuth,
 } from "firebase/auth";
 import { db } from "../firebase/config";
 
@@ -19,6 +20,7 @@ const store = createStore({
         tier: "S",
         image:
           "https://i.pinimg.com/474x/31/ba/98/31ba98cbc56e2b40060d3951dec3adda.jpg",
+        characterAdditiveValue: 500000,
       },
       {
         name: "Shrek 2",
@@ -26,13 +28,16 @@ const store = createStore({
         tier: "S",
         image:
           "https://m.media-amazon.com/images/M/MV5BZmU5ZDE5NTItN2I1YS00ZmFmLTk3YTgtNzQwOGNkYzFjOWRkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+        characterAdditiveValue: 2000,
       },
       {
         name: "Shrek 3",
         price: 64000,
         tier: "S",
+
         image:
           "https://media.sketchfab.com/models/15753cc5826d4a94830309cf5c8c290d/thumbnails/e99812c5d5844413a32861469ca24f21/b72b6385ce704c63b8417ea922cfe594.jpeg",
+        characterAdditiveValue: 1000,
       },
       {
         name: "Fiona 1",
@@ -40,6 +45,7 @@ const store = createStore({
         tier: "A",
         image:
           "https://people.southwestern.edu/~bednarb/su_netWorks/projects/mcentire/fiona.jpg",
+        characterAdditiveValue: 800,
       },
       {
         name: "Fiona 2",
@@ -47,6 +53,7 @@ const store = createStore({
         tier: "A",
         image:
           "https://preview.redd.it/3r3ut78wo4u51.jpg?auto=webp&s=188b221d64b3f5706e84f8d616ffe4b23435692e",
+        characterAdditiveValue: 400,
       },
       {
         name: "Fiona 3",
@@ -54,6 +61,7 @@ const store = createStore({
         tier: "A",
         image:
           "https://i.pinimg.com/236x/6d/0f/ce/6d0fce5676847efb72456ece6b0587aa--shrek-plans.jpg",
+        characterAdditiveValue: 200,
       },
       {
         name: "Donkey 1",
@@ -61,6 +69,7 @@ const store = createStore({
         tier: "B",
         image:
           "https://i.pinimg.com/originals/70/d4/d4/70d4d4ff305cf54a08a4689bbe778405.jpg",
+        characterAdditiveValue: 100,
       },
       {
         name: "Donkey 2",
@@ -68,20 +77,25 @@ const store = createStore({
         tier: "B",
         image:
           "https://img.huffingtonpost.com/asset/586d61191500009206e9e7b2.png?cache=gOeX9kAIdl&ops=1778_1000",
+        characterAdditiveValue: 50,
       },
       {
         name: "Donkey 3",
         price: 1000,
         tier: "B",
         image: "https://img.fruugo.com/product/4/52/108501524_max.jpg",
+        characterAdditiveValue: 10,
       },
     ],
-    order: [],
     user: null,
     authIsReady: false,
     points: 0,
+    additiveValue: 5,
   },
   mutations: {
+    setAdditiveValue(state, payload) {
+      state.additiveValue = payload;
+    },
     setPoints(state, val) {
       state.points = val;
     },
@@ -98,9 +112,14 @@ const store = createStore({
   },
   actions: {
     async fetchPoints({ commit }) {
-      var userUid = auth.currentUser.uid;
+      const auth = getAuth();
+      var user = {
+        uid: auth.currentUser.uid,
+        email: auth.currentUser.email,
+        points: 0,
+      };
       db.collection
-        .doc(userUid)
+        .doc(user.uid)
         .get()
         .then((querySnapshot) => {
           if (querySnapshot.empty) {
@@ -119,20 +138,17 @@ const store = createStore({
       console.log("signup action");
 
       //async code
-      const res = await createUserWithEmailAndPassword(auth, email, password);
+      const res = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      ).then((cred) => {
+        return db.collection("users").doc(cred.user.uid).set({
+          points: this.points,
+        });
+      });
       if (res) {
         context.commit("setUser", res.user);
-        /*   var user = auth().currentUser;
-        user
-          .updateProfile({
-            points: 8,
-          })
-          .then(console.log(user)); */
-        /*   var userUid = auth.currentUser.uid;
-
-        db.collection.doc(userUid).add({
-          points: 0,
-        }); */
       } else {
         throw new Error("could not complete signup");
       }
@@ -164,5 +180,11 @@ const unsub = onAuthStateChanged(auth, (user) => {
 });
 
 store.dispatch("fetchPoints");
+
+// function writeUserData(cred) {
+//   return db.collection("users").doc(cred.user.uid).set({
+//     points: this.points,
+//   });
+// }
 
 export default store;

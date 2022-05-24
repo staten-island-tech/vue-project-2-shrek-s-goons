@@ -5,6 +5,7 @@ body,
   font-size: 10px;
   margin: 0px;
   padding: 0px;
+  /* background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591); */
 }
 
 :root {
@@ -101,7 +102,7 @@ h5 {
 .points {
   position: relative;
   align-self: center;
-  width: 24vw;
+  width: 25vw;
   background-color: var(--light-green);
 }
 
@@ -159,6 +160,7 @@ h5 {
   border-radius: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 10rem;
 }
 
 .list {
@@ -211,9 +213,9 @@ nav span {
 nav a {
   color: var(--grey);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   background-color: var(--lightGrey);
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 0.5rem;
 }
 
@@ -246,6 +248,8 @@ form button {
 
 .timer {
   background-color: var(--white);
+}
+=======
 }
 
 

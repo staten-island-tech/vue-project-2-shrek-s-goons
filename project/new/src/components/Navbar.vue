@@ -16,7 +16,7 @@
       <!-- for logged out users -->
       <div v-if="!user">
         <router-link to="/login">Login</router-link>
-        <router-link to="/signup">Register</router-link>
+        <router-link to="/signup" class="Register">Register</router-link>
       </div>
     </template>
   </nav>
@@ -42,3 +42,8 @@ export default {
   // components: StopWatch,
 };
 </script>
+<style>
+.Register {
+  margin-left: 1.5rem;
+}
+</style>

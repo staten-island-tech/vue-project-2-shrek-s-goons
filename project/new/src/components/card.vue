@@ -3,9 +3,12 @@
     <h2>{{ title }}</h2>
     <img class="cardImage" :src="getImage" alt="" />
     <h4>Tier={{ tier }}</h4>
-    <Button v-if="user" @button-click="$emit('remove')" class="cartButton">{{
-      price
-    }}</Button>
+    <Button
+      v-if="user"
+      @button-click="$emit('remove', 'click')"
+      class="cartButton"
+      >{{ price }}</Button
+    >
   </div>
 </template>
 

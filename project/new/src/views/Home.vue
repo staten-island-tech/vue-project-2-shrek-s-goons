@@ -12,6 +12,7 @@
         :image="characters.image"
         :additiveValue="characters.characterAdditiveValue"
         @remove="removePoints(index)"
+        @click="loggyness()"
       />
     </div>
   </div>
@@ -50,9 +51,13 @@ export default {
           +this.shrekCharacters[index].characterAdditiveValue
         );
         this.shrekCharacters[index].price = 0;
+        // setDoc(doc(db, "users", res.user.uid)
       } else {
         alert("Shrek Says Get More Cash");
       }
+    },
+    loggyness() {
+      console.log("Hi, I'm a random log");
     },
   },
 

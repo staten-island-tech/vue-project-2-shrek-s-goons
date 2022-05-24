@@ -136,7 +136,7 @@ const store = createStore({
       )
         try {
           await setDoc(doc(db, "users", res.user.uid), {
-            points: 1000,
+            points: 0,
           }); 
         } catch (e) {
           console.error("Error adding document: ", e);
@@ -170,6 +170,8 @@ const store = createStore({
       console.log("MUMMMM");
       context.commit("setUser", null);
       context.commit("setPoints",0);
+      context.commit("setAdditiveValue",5)
+      location.reload()
     },
   },
 });

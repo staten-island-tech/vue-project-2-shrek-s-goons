@@ -249,28 +249,3 @@ form button {
 .timer {
   background-color: var(--white);
 }
-
-@media screen and (max-width: 1800px) {
-  .mainOrder {}
-}
-
-@media screen and (max-width: 1500px) {
-  .mainOrder {
-    height: 62.5rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .mainOrder {
-    height: 46.5rem;
-    /* width: 25vw; We're going to have to split up the mainorder component so we can adjust the width*/
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mainOrder {}
-}
-
-@media screen and (max-width: 400px) {
-  .mainOrder {}
-}

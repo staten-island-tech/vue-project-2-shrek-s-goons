@@ -120,6 +120,10 @@ h5 {
   z-index: 1;
 }
 
+.mainOrder::-webkit-scrollbar {
+  display: none;
+}
+
 .emailLogin {
   font-size: 2rem;
 }
@@ -240,6 +244,10 @@ label {
 form button {
   display: block;
   margin-top: 20px;
+}
+
+.timer {
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 1800px) {

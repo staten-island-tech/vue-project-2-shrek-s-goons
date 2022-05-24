@@ -109,7 +109,7 @@ h5 {
 .mainOrder {
   flex-wrap: wrap;
   display: block;
-  width: 24vw;
+  width: 25vw;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -248,8 +248,6 @@ form button {
 
 .timer {
   background-color: var(--white);
-}
-=======
 }
 
 

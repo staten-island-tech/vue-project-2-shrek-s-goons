@@ -14,15 +14,14 @@ const firebaseConfig = {
 };
 
 // init firebase
-initializeApp(firebaseConfig);
-
+// initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 //init firebase auth
 const auth = getAuth();
 
 export { auth };
 
 //init firestore
-const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };

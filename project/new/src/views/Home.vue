@@ -41,7 +41,7 @@ export default {
   methods: {
     //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then change picture.This will then change the click value of the main button to add more.
     removePoints(index) {
-      if (this.points > this.shrekCharacters[index].price) {
+      if (this.points >= this.shrekCharacters[index].price) {
         this.$store.commit("updatePoints", -this.shrekCharacters[index].price);
         this.shrekCharacters[index].image =
           "https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg";

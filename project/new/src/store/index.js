@@ -1,5 +1,4 @@
 import { createStore } from "vuex";
-
 //firebase inports
 import { auth } from "../firebase/config";
 import {
@@ -7,9 +6,10 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-  getAuth,
+  // getAuth,
 } from "firebase/auth";
 import { db } from "../firebase/config";
+import { setDoc,doc, getDoc } from "firebase/firestore";
 
 const store = createStore({
   state: {
@@ -101,8 +101,12 @@ const store = createStore({
     },
     updatePoints(state, payload) {
       state.points = state.points + payload;
+      setDoc(doc(db, "users", state.user.uid), {
+        points: state.points,
+      }); 
     },
     setUser(state, payload) {
+      console.log("WATTTTTTTTT");
       state.user = payload;
       console.log("user state changed :", state.user);
     },
@@ -112,26 +116,13 @@ const store = createStore({
   },
   actions: {
     async fetchPoints({ commit }) {
-      const auth = getAuth();
-      var user = {
-        uid: auth.currentUser.uid,
-        email: auth.currentUser.email,
-        points: 0,
-      };
-      db.collection
-        .doc(user.uid)
-        .get()
-        .then((querySnapshot) => {
-          if (querySnapshot.empty) {
-            console.log("no points");
-          } else {
-            var points = 0;
-            querySnapshot.forEach((doc) => {
-              points.push(doc.data());
-            });
-            commit("setPoints", points);
-          }
-        });
+      console.log(this.state.user);
+   
+      const docRef = doc(db, "users", this.state.user.uid);
+      const docSnapshot = await getDoc(docRef);
+
+    commit("setPoints", docSnapshot.data().points);
+
     },
 
     async signup(context, { email, password }) {
@@ -142,12 +133,19 @@ const store = createStore({
         auth,
         email,
         password
-      ).then((cred) => {
-        return db.collection("users").doc(cred.user.uid).set({
-          points: this.points,
-        });
-      });
+      )
+        try {
+          await setDoc(doc(db, "users", res.user.uid), {
+            points: 1000,
+          }); 
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }        
+        // return db.collection("users").doc(cred.user.uid).set({
+        //   points: this.points,
+        // });
       if (res) {
+        console.log("YOOOOO");
         context.commit("setUser", res.user);
       } else {
         throw new Error("could not complete signup");
@@ -159,6 +157,7 @@ const store = createStore({
       //async code
       const res = await signInWithEmailAndPassword(auth, email, password);
       if (res) {
+        console.log("WEEEE");
         context.commit("setUser", res.user);
       } else {
         throw new Error("could not complete login");
@@ -168,18 +167,21 @@ const store = createStore({
       console.log("logout action");
 
       await signOut(auth);
+      console.log("MUMMMM");
       context.commit("setUser", null);
+      context.commit("setPoints",0);
     },
   },
 });
 
 const unsub = onAuthStateChanged(auth, (user) => {
   store.commit("setAuthIsReady", true);
+  console.log("ROBERTOOO");
   store.commit("setUser", user);
+  store.dispatch("fetchPoints");
   unsub();
 });
-
-store.dispatch("fetchPoints");
+console.log("dispatching");
 
 // function writeUserData(cred) {
 //   return db.collection("users").doc(cred.user.uid).set({

@@ -44,15 +44,15 @@ export default {
   height: 500px;
 }
 .BTN {
-  margin-left: 175px;
-  font-size: 20px;
+  margin-left: 8rem;
+  /* font-size: 20px; */
   border-radius: 20px;
-  border: white solid 4px;
+  /* border: white solid 4px; */
   background-color: white;
   transition: 0.5s;
 }
 .BTN:hover {
-  transform: scale(1.1);
+  transform: scale(1.0125);
 }
 .BTN:active {
   transform: scale(0.9);

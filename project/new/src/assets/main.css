@@ -114,7 +114,7 @@ h5 {
   align-items: center;
   position: relative;
   overflow-y: scroll;
-  height: 79rem;
+  height: 65.7rem;
   background-color: var(--grey);
   z-index: 1;
 }
@@ -187,8 +187,8 @@ nav {
 }
 
 nav h1 {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logoutButton,
@@ -249,7 +249,7 @@ form button {
 }
 
 
-@media screen and (max-width: 1800px) {
+/* @media screen and (max-width: 1800px) {
   .mainOrder {}
 }
 
@@ -262,14 +262,12 @@ form button {
 @media screen and (max-width: 1200px) {
   .mainOrder {
     height: 46.5rem;
-    /* width: 25vw; We're going to have to split up the mainorder component so we can adjust the width*/
-  }
-}
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
   .mainOrder {}
 }
 
 @media screen and (max-width: 400px) {
   .mainOrder {}
-}
+} */

@@ -44,15 +44,12 @@ export default {
     purchase(index) {
       if (this.points > this.shrekCharacters[index].price) {
         this.$store.commit("updatePoints", -this.shrekCharacters[index].price);
-        this.shrekCharacters[index].image =
-          "https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg";
         this.$store.commit(
           "setAdditiveValue",
           +this.shrekCharacters[index].characterAdditiveValue
         );
-        this.shrekCharacters[index].price = 0;
         this.shrekCharacters[index].available = false;
-        this.shrekCharacters[index].
+        this.shrekCharacters.pop(index);
       } else {
         alert("Shrek Says Get More Cash");
       }

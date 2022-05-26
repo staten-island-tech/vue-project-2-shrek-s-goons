@@ -47,6 +47,8 @@ export default {
 .BTN {
   height: 500px;
   border-radius: 20px;
+  /* border: white solid 4px; */
+  background-color: white;
   transition: 0.5s;
 }
 .BTN:hover {

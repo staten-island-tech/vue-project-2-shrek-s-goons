@@ -1,19 +1,23 @@
 <template>
-  <div>
-    <Clicker class="moneyAdder" />
-    <h2 class="points">Balance: ${{ points }}</h2>
-    <div class="mainOrder">
-      <Card
-        v-for="(characters, index) in shrekCharacters"
-        :key="index"
-        :title="characters.name"
-        :price="characters.price"
-        :tier="characters.tier"
-        :image="characters.image"
-        :additiveValue="characters.characterAdditiveValue"
-        @remove="removePoints(index)"
-        @click="loggyness()"
-      />
+  <div class="main-page-content">
+    <div class="sidebar">
+      <h2 class="points">Balance: ${{ points }}</h2>
+      <div class="mainOrder">
+        <Card
+          v-for="(characters, index) in shrekCharacters"
+          :key="index"
+          :title="characters.name"
+          :price="characters.price"
+          :tier="characters.tier"
+          :image="characters.image"
+          :additiveValue="characters.characterAdditiveValue"
+          @remove="removePoints(index)"
+          @click="loggyness()"
+        />
+      </div>
+    </div>
+    <div class="clicker-container">
+      <Clicker class="moneyAdder" />
     </div>
   </div>
 </template>
@@ -68,3 +72,16 @@ export default {
   },
 };
 </script>
+<style>
+.main-page-content {
+  display: flex;
+}
+.clicker-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591);
+  background-size: cover;
+}
+</style>

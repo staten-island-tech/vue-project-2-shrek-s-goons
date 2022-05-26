@@ -84,13 +84,6 @@ h5 {
   text-align: center;
 }
 
-.moneyAdder {
-  position: absolute;
-  left: 40%;
-  top: 40%;
-  z-index: 2;
-}
-
 #farquaad {
   transition: 0.3s;
 }
@@ -170,10 +163,6 @@ h5 {
 .shrek {
   max-width: 30%;
   position: relative;
-}
-
-.container {
-  max-width: 20%;
 }
 
 #app {

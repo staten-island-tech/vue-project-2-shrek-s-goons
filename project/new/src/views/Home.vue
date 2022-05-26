@@ -24,7 +24,7 @@
 
 <script>
 import Card from "../components/card.vue";
-import Clicker from "../components/clicker.vue";
+import Clicker from "../components/Clicker.vue";
 
 export default {
   name: "Home",

@@ -22,13 +22,18 @@
     </Button>
     <Button id="Button-Checkout" @button-click="$emit('checkout')">
       Checkout
-    </Button>
-
+    </Button> 
+ <Button v-on:click="playSound()">CLICK MEEEEEEEEEEEEEEEE</Button>
     <img class="shrek" src="//pbs.twimg.com/media/B-hpVrGIUAAHA_d.jpg" alt="" />
   </div>
 </template>
 
 <script>
+// '91476_Glorious_morning.mp3'
+// function audio() {
+//   var audio = new Audio("91476_Glorious_morning.mp3");
+//   audio.play();
+// }
 import Button from "../components/button.vue";
 import { order, orderPrice, subtotal } from "../views/Home.vue";
 export default {
@@ -39,7 +44,16 @@ export default {
     order: order,
   },
   components: Button,
-};
+
+  methods:{
+playSound(){
+  console.log("YO");
+    var audio = new Audio("91476_Glorious_morning.mp3");
+    audio.play(); 
+    console.log("wat");
+  }
+}
+  };
 </script>
 
 <style>

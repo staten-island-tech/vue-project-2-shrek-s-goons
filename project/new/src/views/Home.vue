@@ -1,18 +1,23 @@
 <template>
-  <div>
-    <Clicker class="moneyAdder" />
-    <h2 class="points">Balance: ${{ points }}</h2>
-    <div class="mainOrder">
-      <Card
-        v-for="(characters, index) in shrekCharacters"
-        :key="index"
-        :title="characters.name"
-        :price="characters.price"
-        :tier="characters.tier"
-        :image="characters.image"
-        :additiveValue="characters.characterAdditiveValue"
-        @remove="purchase(index)"
-      />
+  <div class="main-page-content">
+    <div class="sidebar">
+      <h2 class="points">Balance: ${{ points }}</h2>
+      <div class="mainOrder">
+        <Card
+          v-for="(character, index) in shrekCharacters"
+          :key="index"
+          :title="character.name"
+          :price="character.price"
+          :tier="character.tier"
+          :image="character.image"
+          :purchased="character.purchased"
+          @remove="removePoints(index)"
+          @click="loggyness()"
+        />
+      </div>
+    </div>
+    <div class="clicker-container">
+      <Clicker class="moneyAdder" />
     </div>
   </div>
 </template>
@@ -35,25 +40,41 @@ export default {
     return {
       any,
       shrekCharacters: computed(() => store.state.shrekCharacters),
-      points: computed(() => store.state.points),
     };
   },
 
   methods: {
     //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then change picture.This will then change the click value of the main button to add more.
-    purchase(index) {
-      if (this.points > this.shrekCharacters[index].price) {
-        this.$store.commit("updatePoints", -this.shrekCharacters[index].price);
-        this.$store.commit(
-          "setAdditiveValue",
-          +this.shrekCharacters[index].characterAdditiveValue
-        );
-        this.shrekCharacters[index].available = false;
-        this.shrekCharacters.pop(index);
+    removePoints(index) {
+      const character = this.shrekCharacters[index];
+      if (character.purchased === false && this.points >= character.price) {
+        this.$store.dispatch("purchaseItem", { itemIndex: index });
       } else {
         alert("Shrek Says Get More Cash");
       }
     },
+    loggyness() {
+      console.log("Hi, I'm a random log");
+    },
+  },
+
+  computed: {
+    points() {
+      return this.$store.state.points;
+    },
   },
 };
 </script>
+<style>
+.main-page-content {
+  display: flex;
+}
+.clicker-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591);
+  background-size: cover;
+}
+</style>

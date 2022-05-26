@@ -41,11 +41,11 @@ export default {
 </script>
 <style>
 .ROCK {
-  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
 }
 .BTN {
-  margin-left: 8rem;
-  /* font-size: 20px; */
+  height: 500px;
   border-radius: 20px;
   /* border: white solid 4px; */
   background-color: white;

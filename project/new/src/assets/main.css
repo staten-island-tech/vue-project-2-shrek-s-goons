@@ -84,13 +84,6 @@ h5 {
   text-align: center;
 }
 
-.moneyAdder {
-  position: absolute;
-  left: 40%;
-  top: 40%;
-  z-index: 2;
-}
-
 #farquaad {
   transition: 0.3s;
 }
@@ -109,7 +102,7 @@ h5 {
 .mainOrder {
   flex-wrap: wrap;
   display: block;
-  width: 24vw;
+  width: 25vw;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -145,7 +138,6 @@ h5 {
 }
 
 .form {
-  margin-left: 90%;
   background-color: var(--light-green);
   border-radius: 2rem;
   border: var(--black) solid 0.5rem;
@@ -170,10 +162,6 @@ h5 {
 .shrek {
   max-width: 30%;
   position: relative;
-}
-
-.container {
-  max-width: 20%;
 }
 
 #app {
@@ -249,7 +237,6 @@ form button {
 .timer {
   background-color: var(--white);
 }
-
 
 
 /* @media screen and (max-width: 1800px) {

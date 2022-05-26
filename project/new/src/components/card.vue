@@ -1,11 +1,20 @@
 <template>
   <div class="card">
     <h2>{{ title }}</h2>
-    <img class="cardImage" :src="getImage" alt="" />
+    <img
+      v-if="purchased"
+      class="cardImage"
+      src="https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg)"
+      alt=""
+    />
+    <img v-else class="cardImage" :src="getImage" alt="" />
     <h4>Tier={{ tier }}</h4>
-    <Button v-if="user" @button-click="$emit('remove')" class="cartButton">{{
-      price
-    }}</Button>
+    <Button
+      v-if="user && purchased === false"
+      @button-click="$emit('remove', 'click')"
+      class="cartButton"
+      >{{ price }}</Button
+    >
   </div>
 </template>
 
@@ -33,6 +42,7 @@ export default {
     price: Number,
     image: String,
     tier: String,
+    purchased: Boolean,
   },
   computed: {
     getImage: function () {

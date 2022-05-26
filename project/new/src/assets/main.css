@@ -138,7 +138,6 @@ h5 {
 }
 
 .form {
-  margin-left: 90%;
   background-color: var(--light-green);
   border-radius: 2rem;
   border: var(--black) solid 0.5rem;

@@ -1,6 +1,6 @@
 <template>
-  <div class="bg">
-    <h1 class="title">You have been a very naughty boy</h1>
+  <div class="title">
+    <h1>Shrek is pleased with your progress</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 body,
 html {
   height: 100%;
@@ -18,11 +18,22 @@ html {
   color: red;
   font-size: 125px;
   text-align: center;
+  position: absolute;
+  bottom: 10%;
 }
 
+body {
+  background-image: url("https://i.ytimg.com/vi/OX3C5t7kvu8/maxresdefault.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg {
   background-image: url("https://i.ytimg.com/vi/OX3C5t7kvu8/maxresdefault.jpg");
   height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

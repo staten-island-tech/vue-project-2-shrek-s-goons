@@ -6,6 +6,7 @@ body,
   font-size: 10px;
   margin: 0px;
   padding: 0px;
+  /* background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591); */
 }
 
 :root {
@@ -54,22 +55,28 @@ body,
   --headerHeight: 3rem;
   --borderRadius: 10px;
 }
+
 h1 {
   font-size: var(--h1);
 }
+
 h2 {
   font-size: var(--h2);
 }
+
 h3 {
   font-size: var(--h3);
 }
+
 h4 {
   font-size: var(--h4);
   color: black;
 }
+
 h5 {
   font-size: var(--h5);
 }
+
 h1,
 h2,
 h3,
@@ -78,32 +85,75 @@ h5 {
   text-align: center;
 }
 
-.moneyAdder {
+#farquaad {
+  transition: 0.3s;
+}
+
+#farquaad:hover {
+  size: 150%;
+}
+
+.points {
   position: relative;
+  align-self: center;
+  width: 25vw;
+  background-color: var(--light-green);
 }
 
 .mainOrder {
   flex-wrap: wrap;
-  display: flex;
-  width: 50vw;
-  justify-content: space-evenly;
+  display: block;
+  width: 25vw;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  position: fixed;
-  left: 50rem;
+  position: relative;
+  overflow-y: scroll;
+  height: 65.7rem;
+  background-color: var(--grey);
+  z-index: 1;
+}
+
+.mainOrder::-webkit-scrollbar {
+  display: none;
+}
+
+.emailLogin {
+  font-size: 2rem;
+}
+
+.passwordLogin {
+  font-size: 2rem;
+}
+
+.inputEmail {
+  font-size: 2rem;
+  width: 40rem;
+  height: 4rem;
+}
+
+.inputPassword {
+  font-size: 2rem;
+  width: 40rem;
+  height: 4rem;
 }
 
 .form {
-  margin-left: 40%;
+  background-color: var(--light-green);
+  border-radius: 2rem;
+  border: var(--black) solid 0.5rem;
+  width: 50rem;
+  margin-top: 10rem;
 }
 
 .navTitle {
   position: relative;
   font-size: var(--h1);
-  background-color: var(--green);
-  border-radius: 5rem;
+  background-color: var(--light-green);
+  border-radius: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 10rem;
 }
 
 .list {
@@ -115,48 +165,60 @@ h5 {
   position: relative;
 }
 
-.container {
-  max-width: 30%;
-}
-
 #app {
-  align-content: space-around;
-  background-color: var(--black);
+  background-color: var(--white);
+  height: 8vw;
 }
 
 nav {
   display: flex;
   align-items: center;
-  margin-left: 50%;
-  width: 70vw;
+  width: 100vw;
+  background-color: var(--black);
 }
+
 nav h1 {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+.logoutButton,
 nav a,
 nav button,
 nav span {
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-bottom: 10rem;
 }
+
+.logoutSection {
+  background-color: var(--light-green);
+  margin-left: 3rem;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 2rem;
+}
+
+.logoutButton,
 nav a {
   color: var(--grey);
   font-weight: bold;
   font-size: 4rem;
   background-color: var(--lightGrey);
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 0.5rem;
 }
 
 nav a:hover {
   background-color: var(--green);
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 nav span {
-  color: var(--light-blue-gradient);
+  color: var(--white);
   margin-left: 10%;
+  font-size: 2rem;
 }
+
 .top {
   color: var(--black);
 }
@@ -167,7 +229,36 @@ label {
   margin-top: 20px;
   color: var(--black);
 }
+
 form button {
   display: block;
   margin-top: 20px;
 }
+
+.timer {
+  background-color: var(--white);
+}
+
+
+/* @media screen and (max-width: 1800px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 1500px) {
+  .mainOrder {
+    height: 62.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainOrder {
+    height: 46.5rem;
+
+
+/* @media screen and (max-width: 768px) {
+  .mainOrder {}
+}
+
+@media screen and (max-width: 400px) {
+  .mainOrder {}
+} */

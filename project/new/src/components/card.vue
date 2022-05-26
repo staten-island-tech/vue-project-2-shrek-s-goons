@@ -1,39 +1,17 @@
 <template>
   <div class="card">
     <h2>{{ title }}</h2>
-    <img
-      v-if="purchased"
-      class="cardImage"
-      src="https://thumbs.dreamstime.com/b/red-no-symbol-icon-shape-print-stop-sign-ban-isolated-white-background-134319752.jpg)"
-      alt=""
-    />
-    <img v-else class="cardImage" :src="getImage" alt="" />
+    <img class="cardImage" :src="getImage" alt="" />
     <h4>Tier={{ tier }}</h4>
-    <Button
-      v-if="user && purchased === false"
-      @button-click="$emit('remove', 'click')"
-      class="cartButton"
-      >{{ price }}</Button
-    >
+    <Button @button-click="$emit('add')" class="cartButton">{{ price }}</Button>
   </div>
 </template>
 
 <script>
 import Button from "../components/button.vue";
-import { useStore } from "vuex";
-import { computed, ref } from "vue";
 
 export default {
   name: "Card",
-  setup() {
-    const any = ref([]);
-    const store = useStore();
-
-    return {
-      any,
-      user: computed(() => store.state.user),
-    };
-  },
   components: {
     Button: Button,
   },
@@ -42,7 +20,6 @@ export default {
     price: Number,
     image: String,
     tier: String,
-    purchased: Boolean,
   },
   computed: {
     getImage: function () {
@@ -54,15 +31,16 @@ export default {
 
 <style>
 .card {
-  width: 80%;
-  height: 40rem;
+  width: 13%;
+  height: 10%;
   background-color: rgb(9, 65, 9);
-  border: greenyellow 0.5rem solid;
+  border: greenyellow 5px solid;
   text-align: center;
+  padding: 15px;
+  flex-direction: collumn;
   box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);
-  margin-top: 8rem;
-  border-radius: 5rem;
-  margin-left: 5rem;
+  margin-top: 80px;
+  border-radius: 50px;
 }
 .cardImage {
   width: 40%;

@@ -239,7 +239,7 @@ form button {
 }
 
 
-/* @media screen and (max-width: 1800px) {
+@media screen and (max-width: 1800px) {
   .mainOrder {}
 }
 
@@ -247,17 +247,18 @@ form button {
   .mainOrder {
     height: 62.5rem;
   }
-}
 
-@media screen and (max-width: 1200px) {
-  .mainOrder {
-    height: 46.5rem;
-
-
-/* @media screen and (max-width: 768px) {
-  .mainOrder {}
+  .cardImage {
+    size: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .mainOrder {}
-} */
+  .mainOrder {
+    height: 10rem;
+  }
+
+  .cardImage {
+    size: 50%;
+  }
+}

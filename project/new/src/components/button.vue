@@ -1,5 +1,5 @@
 <template>
-  <button @click="$emit('button-click')"><slot></slot></button>
+  <button class="button" @click="$emit('button-click')"><slot></slot></button>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style>
-button {
+.button {
   width: 150px;
   height: 40px;
   font-size: 20px;
@@ -19,10 +19,10 @@ button {
   color: black;
   transition: 0.3s;
 }
-button:hover {
+.button:hover {
   transform: scale(1.1);
 }
-button:active {
+.button:active {
   transform: scale(0.6);
 }
 </style>

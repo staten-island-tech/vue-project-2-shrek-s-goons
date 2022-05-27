@@ -2,11 +2,19 @@
   <form @submit.prevent="handleSubmit" class="form">
     <h3>Login</h3>
 
+<<<<<<< HEAD
     <label for="email">Email:</label>
     <input class="email" type="email" name="email" v-model="email" required />
 
     <label for="email">Password:</label>
     <input class= "password" type="password" name="password" v-model="password" required />
+=======
+    <label class="emailLogin" for="email">Email:</label>
+    <input class="inputEmail" type="email" name="email" v-model="email" required />
+
+    <label class="passwordLogin" for="email">Password:</label>
+    <input class="inputPassword" type="password" name="password" v-model="password" required />
+>>>>>>> e159e65e059fc2d552546a0d9452718e7f87f0c8
 
     <button>Login</button>
     <div v-if="error">{{ error }}</div>
@@ -14,6 +22,7 @@
 </template>
 
 <script>
+
 import { ref } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
@@ -39,9 +48,13 @@ export default {
   },
 };
 </script>
+<<<<<<< HEAD
 <style scoped>
 .password,
 .email{
   font-size: var(--h4);
 }
 </style>
+=======
+
+>>>>>>> e159e65e059fc2d552546a0d9452718e7f87f0c8

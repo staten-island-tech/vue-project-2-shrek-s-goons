@@ -39,11 +39,7 @@ export default {
       authIsReady: computed(() => store.state.authIsReady),
     };
   },
-  // components: StopWatch,
 };
 </script>
 <style>
-.Register {
-  margin-left: 1.5rem;
-}
 </style>

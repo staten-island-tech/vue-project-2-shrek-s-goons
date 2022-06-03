@@ -45,9 +45,10 @@ export default {
   max-width: 100%;
 }
 .BTN {
-  height: 500px;
-  border-radius: 20px;
-  /* border: white solid 4px; */
+  height: 50rem;
+  width: 50 rem;
+  border-radius: 2 rem;
+  border: white solid 4px;
   background-color: white;
   transition: 0.5s;
 }

@@ -1,15 +1,15 @@
 <template>
-  <button @click="$emit('button-click')"><slot></slot></button>
+  <button class="button" @click="$emit('button-click')"><slot></slot></button>
 </template>
 
 <script>
 export default {
   name: "Button",
-};
+};    
 </script>
 
 <style>
-button {
+.button {
   width: 150px;
   height: 40px;
   font-size: 20px;

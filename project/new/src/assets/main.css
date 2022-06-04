@@ -309,6 +309,9 @@ form button {
   }
 }
 
+.clicker-text{
+  font-size: 5rem;
+}
 
 #app{
   height: 100%;

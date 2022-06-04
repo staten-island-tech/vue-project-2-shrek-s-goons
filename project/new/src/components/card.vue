@@ -56,7 +56,7 @@ export default {
 .card {
   width: 80%;
   height: 40rem;
-  background-color: rgb(9, 65, 9);
+  background-color: rgb(11, 116, 11);
   border: greenyellow 0.5rem solid;
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);

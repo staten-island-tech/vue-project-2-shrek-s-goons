@@ -65,16 +65,3 @@ export default {
   },
 };
 </script>
-<style>
-.main-page-content {
-  display: flex;
-}
-.clicker-container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591);
-  background-size: cover;
-}
-</style>

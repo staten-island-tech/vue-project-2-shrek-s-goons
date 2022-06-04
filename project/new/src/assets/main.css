@@ -141,6 +141,8 @@ h5 {
   border-radius: 2rem;
   border: var(--black) solid 0.5rem;
   margin-top: 10rem;
+  margin-left: 40rem;
+  margin-right: 40rem;
 }
 
 .navTitle {
@@ -259,4 +261,16 @@ form button {
   .cardImage {
     size: 50%;
   }
+}
+
+.main-page-content {
+  display: flex;
+}
+.clicker-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591);
+  background-size: cover;
 }

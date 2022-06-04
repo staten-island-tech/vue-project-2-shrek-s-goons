@@ -41,8 +41,8 @@ export default {
 </script>
 <style>
 .ROCK {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 98%;
+  max-width: 98%;
 }
 .BTN {
   width: 50rem;

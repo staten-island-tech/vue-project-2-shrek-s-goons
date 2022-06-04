@@ -2,15 +2,21 @@
   <form @submit.prevent="handleSubmit" class="form">
     <h3>Register</h3>
 
-    <label for="email" class="emailT">Email:</label>
-    <input type="email" name="email" v-model="email" class="formE" required />
+    <label for="email" class="emailLogin">Email:</label>
+    <input
+      type="email"
+      name="email"
+      v-model="email"
+      class="inputEmail"
+      required
+    />
 
-    <label for="email" class="passwordT">Password:</label>
+    <label for="email" class="passwordLogin">Password:</label>
     <input
       type="password"
       name="password"
       v-model="password"
-      class="formP"
+      class="inputPassword"
       required
     />
 
@@ -52,26 +58,10 @@ export default {
 <style>
 body {
   background-image: url(https://www.whatspaper.com/wp-content/uploads/2022/01/shrek-wallpaper-whatspaper-5.jpg);
-  height: 72rem;
+  height: 82rem;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.passwordT {
-  font-size: 2rem;
-}
-.emailT {
-  font-size: 2rem;
-}
-.formE {
-  font-size: 2rem;
-  width: 40rem;
-  height: 4rem;
-}
-.formP {
-  font-size: 2rem;
-  width: 40rem;
-  height: 4rem;
 }
 </style>

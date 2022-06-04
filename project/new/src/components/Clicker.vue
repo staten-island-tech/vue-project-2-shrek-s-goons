@@ -46,7 +46,7 @@ export default {
 }
 .BTN {
   width: 50rem;
-  height: 500px;
+  height: 50rem;
   border-radius: 20px;
   /* border: white solid 4px; */
   background-color: white;

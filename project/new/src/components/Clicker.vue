@@ -46,14 +46,6 @@ export default {
   max-height: 98%;
   max-width: 98%;
 }
-.BTN {
-  width: 50rem;
-  height: 50rem;
-  border-radius: 20px;
-  /* border: white solid 4px; */
-  background-color: white;
-  transition: 0.5s;
-}
 .BTN:hover {
   transform: scale(1.0125);
 }

@@ -53,17 +53,6 @@ export default {
 </script>
 
 <style>
-.card {
-  width: 80%;
-  height: 40rem;
-  background-color: rgb(11, 116, 11);
-  border: greenyellow 0.5rem solid;
-  text-align: center;
-  box-shadow: 0 1.5rem 4rem rgb(0, 0, 0);
-  margin-top: 8rem;
-  border-radius: 5rem;
-  margin-left: 5rem;
-}
 .cardImage {
   width: 40%;
   object-fit: cover;

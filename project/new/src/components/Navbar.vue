@@ -6,7 +6,7 @@
     <template v-if="authIsReady">
       <!-- for all users -->
       <div>
-        <router-link to="/">Clicker</router-link>
+        <router-link to="/shop">Clicker</router-link>
       </div>
       <!-- for logged in users -->
       <div v-if="user" class="logoutSection">
@@ -41,5 +41,4 @@ export default {
   },
 };
 </script>
-<style>
-</style>
+<style></style>

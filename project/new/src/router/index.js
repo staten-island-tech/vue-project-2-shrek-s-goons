@@ -30,6 +30,13 @@ const routes = [
       return import("../views/Login.vue");
     },
   },
+  {
+    path: "/shop",
+    name: "Shop",
+    component: function () {
+      return import("../views/Shop.vue");
+    },
+  },
 ];
 
 const router = createRouter({

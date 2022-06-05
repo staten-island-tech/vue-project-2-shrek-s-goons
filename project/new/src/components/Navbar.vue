@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1 class="navTitle">The Shrek Project</h1>
+    <h1 class="navTitle" @click="reroute">The Shrek Project</h1>
     <!-- <StopWatch class="timer"></StopWatch> -->
 
     <template v-if="authIsReady">
@@ -38,6 +38,11 @@ export default {
       user: computed(() => store.state.user),
       authIsReady: computed(() => store.state.authIsReady),
     };
+  },
+  methods: {
+    reroute: function () {
+      this.
+    },
   },
 };
 </script>

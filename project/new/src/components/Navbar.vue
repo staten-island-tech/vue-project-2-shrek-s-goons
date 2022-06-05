@@ -41,9 +41,8 @@ export default {
   },
   methods: {
     reroute: function () {
-      this.
+      this.$router.push("Home");
     },
   },
 };
 </script>
-<style></style>

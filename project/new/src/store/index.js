@@ -99,8 +99,12 @@ const store = createStore({
     authIsReady: false,
     points: 0,
     additiveValue: 5,
+    started: false,
   },
   mutations: {
+    setBegin(state) {
+      state.started = true;
+    },
     setAdditiveValue(state, payload) {
       state.additiveValue = payload;
     },

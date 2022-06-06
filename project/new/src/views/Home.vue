@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <ol class="snow-bros">
+    <ol class="snow-bros">
       <li class="t"></li>
       <li class="h"></li>
       <li class="e"></li>
@@ -16,7 +16,7 @@
       <li class="e"></li>
       <li class="c"></li>
       <li class="t"></li>
-    </ol> -->
+    </ol>
     <button class="button-begin">Click Here to Start</button>
   </div>
 </template>

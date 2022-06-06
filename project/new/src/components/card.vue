@@ -11,7 +11,7 @@
     <h4>Tier={{ tier }}</h4>
     <Button
       v-if="user && purchased === false"
-      @button-click="$emit('remove', 'click')"
+      @button-click="$emit('remove')"
       class="cartButton"
       >{{ price }}</Button
     >

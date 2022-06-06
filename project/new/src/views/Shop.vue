@@ -12,7 +12,6 @@
           :image="character.image"
           :purchased="character.purchased"
           @remove="removePoints(index)"
-          @click="loggyness()"
         />
       </div>
     </div>
@@ -52,9 +51,6 @@ export default {
       } else {
         alert("Shrek Says Get More Cash");
       }
-    },
-    loggyness() {
-      console.log("Hi, I'm a random log");
     },
   },
 

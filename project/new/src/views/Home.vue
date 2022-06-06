@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <ol class="snow-bros">
+    <ol class="snow-bros">
       <li class="t"></li>
       <li class="h"></li>
       <li class="e"></li>
@@ -16,8 +16,8 @@
       <li class="e"></li>
       <li class="c"></li>
       <li class="t"></li>
-    </ol> -->
-    <button class="button-begin">Click Here to Start</button>
+    </ol>
+    <button class="button-begin" @click="begin()">Click Here to Start</button>
   </div>
 </template>
 
@@ -26,8 +26,9 @@ export default {
   name: "Home",
   method: {
     begin() {
-      this.$router.push("Shop");
-      this.$store.commit("setBegin");
+      console.log("yes");
+      // this.$router.push("Shop");
+      // this.$store.commit("setBegin");
     },
   },
 };

@@ -1,12 +1,12 @@
 <template>
   <nav>
-    <h1 class="navTitle">The Shrek Project</h1>
+    <h1 class="navTitle" @click="reroute">The Shrek Project</h1>
     <!-- <StopWatch class="timer"></StopWatch> -->
 
     <template v-if="authIsReady">
       <!-- for all users -->
       <div>
-        <router-link to="/">Clicker</router-link>
+        <router-link to="/shop">Clicker</router-link>
       </div>
       <!-- for logged in users -->
       <div v-if="user" class="logoutSection">
@@ -39,11 +39,10 @@ export default {
       authIsReady: computed(() => store.state.authIsReady),
     };
   },
-  // components: StopWatch,
+  methods: {
+    reroute: function () {
+      this.$router.push("/");
+    },
+  },
 };
 </script>
-<style>
-.Register {
-  margin-left: 1.5rem;
-}
-</style>

@@ -9,7 +9,7 @@ import {
   // getAuth,
 } from "firebase/auth";
 import { db } from "../firebase/config";
-import { setDoc,doc, getDoc } from "firebase/firestore";
+import { setDoc, doc, getDoc } from "firebase/firestore";
 
 const store = createStore({
   state: {
@@ -92,15 +92,19 @@ const store = createStore({
         tier: "B",
         image: "https://img.fruugo.com/product/4/52/108501524_max.jpg",
         characterAdditiveValue: 10,
-        purchased: false, 
+        purchased: false,
       },
     ],
     user: null,
     authIsReady: false,
     points: 0,
     additiveValue: 5,
+    started: false,
   },
   mutations: {
+    setBegin(state) {
+      state.started = true;
+    },
     setAdditiveValue(state, payload) {
       state.additiveValue = payload;
     },
@@ -108,16 +112,21 @@ const store = createStore({
       state.points = val;
     },
     setPurchaseds(state, indexes) {
-      indexes.forEach(index => {
+      indexes.forEach((index) => {
         state.shrekCharacters[index].purchased = true;
-        state.additiveValue += state.shrekCharacters[index].characterAdditiveValue;
-      })
+        state.additiveValue +=
+          state.shrekCharacters[index].characterAdditiveValue;
+      });
     },
     updatePoints(state, payload) {
       state.points = state.points + payload;
-      setDoc(doc(db, "users", state.user.uid), {
-        points: state.points,
-      }, { merge:true} ); 
+      setDoc(
+        doc(db, "users", state.user.uid),
+        {
+          points: state.points,
+        },
+        { merge: true }
+      );
     },
     setUser(state, payload) {
       console.log("WATTTTTTTTT");
@@ -129,33 +138,43 @@ const store = createStore({
     },
     purchaseCharacter(state, characterIndex) {
       state.shrekCharacters[characterIndex].purchased = true;
-      const purchasedIndexes = this.state.shrekCharacters.map((character, index) => {
-        if (character.purchased) {
-          return index;
-        } else {
-          return false;
-        }
-      }).filter(element => element !== false);
-      setDoc(doc(db, "users", state.user.uid), {
-        purchasedIndexes : purchasedIndexes,
-      }, { merge: true })
-    }
+      const purchasedIndexes = this.state.shrekCharacters
+        .map((character, index) => {
+          if (character.purchased) {
+            return index;
+          } else {
+            return false;
+          }
+        })
+        .filter((element) => element !== false);
+      setDoc(
+        doc(db, "users", state.user.uid),
+        {
+          purchasedIndexes: purchasedIndexes,
+        },
+        { merge: true }
+      );
+    },
   },
   actions: {
     purchaseItem({ commit }, { itemIndex }) {
       commit("updatePoints", -this.state.shrekCharacters[itemIndex].price);
-      commit("setAdditiveValue", +this.state.shrekCharacters[itemIndex].characterAdditiveValue + this.state.additiveValue);
+      commit(
+        "setAdditiveValue",
+        +this.state.shrekCharacters[itemIndex].characterAdditiveValue +
+          this.state.additiveValue
+      );
       commit("purchaseCharacter", itemIndex);
     },
 
     async fetchData({ commit }) {
       console.log(this.state.user);
-   
+
       const docRef = doc(db, "users", this.state.user.uid);
       const docSnapshot = await getDoc(docRef);
 
-      let points = docSnapshot.data().points
-      if(!points) {
+      let points = docSnapshot.data().points;
+      if (!points) {
         points = 0;
       }
       commit("setPoints", points);
@@ -171,19 +190,15 @@ const store = createStore({
       console.log("signup action");
 
       //async code
-      const res = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      )
-        try {
-          await setDoc(doc(db, "users", res.user.uid), {
-            points: 0,
-            purchasedIndexes: [],
-          }); 
-        } catch (e) {
-          console.error("Error adding document: ", e);
-        }        
+      const res = await createUserWithEmailAndPassword(auth, email, password);
+      try {
+        await setDoc(doc(db, "users", res.user.uid), {
+          points: 0,
+          purchasedIndexes: [],
+        });
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
       if (res) {
         console.log("YOOOOO");
         context.commit("setUser", res.user);
@@ -209,9 +224,9 @@ const store = createStore({
       await signOut(auth);
       console.log("MUMMMM");
       context.commit("setUser", null);
-      context.commit("setPoints",0);
-      context.commit("setAdditiveValue",5)
-      location.reload()
+      context.commit("setPoints", 0);
+      context.commit("setAdditiveValue", 5);
+      location.reload();
     },
   },
 });
@@ -224,11 +239,5 @@ const unsub = onAuthStateChanged(auth, (user) => {
   unsub();
 });
 console.log("dispatching");
-
-// function writeUserData(cred) {
-//   return db.collection("users").doc(cred.user.uid).set({
-//     points: this.points,
-//   });
-// }
 
 export default store;

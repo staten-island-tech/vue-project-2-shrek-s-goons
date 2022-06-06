@@ -1,80 +1,45 @@
 <template>
-  <div class="main-page-content">
-    <div class="sidebar">
-      <h2 class="points">Balance: ${{ points }}</h2>
-      <div class="mainOrder">
-        <Card
-          v-for="(character, index) in shrekCharacters"
-          :key="index"
-          :title="character.name"
-          :price="character.price"
-          :tier="character.tier"
-          :image="character.image"
-          :purchased="character.purchased"
-          @remove="removePoints(index)"
-          @click="loggyness()"
-        />
-      </div>
-    </div>
-    <div class="clicker-container">
-      <Clicker class="moneyAdder" />
-    </div>
+  <div>
+    <!-- <ol class="snow-bros">
+      <li class="t"></li>
+      <li class="h"></li>
+      <li class="e"></li>
+      <li class="s"></li>
+      <li class="h"></li>
+      <li class="r"></li>
+      <li class="e"></li>
+      <li class="k"></li>
+      <li class="p"></li>
+      <li class="r"></li>
+      <li class="o"></li>
+      <li class="j"></li>
+      <li class="e"></li>
+      <li class="c"></li>
+      <li class="t"></li>
+    </ol> -->
+    <button class="button-begin">Click Here to Start</button>
   </div>
 </template>
 
 <script>
-import Card from "../components/card.vue";
-import Clicker from "../components/Clicker.vue";
-import { useStore } from "vuex";
-import { computed, ref } from "vue";
-
 export default {
   name: "Home",
-  components: {
-    Card,
-    Clicker,
-  },
-  setup() {
-    const any = ref([]);
-    const store = useStore();
-    return {
-      any,
-      shrekCharacters: computed(() => store.state.shrekCharacters),
-    };
-  },
-
-  methods: {
-    //When click on button that appears after user has logged in, if price is greater than store.state.points, subtract the price from store.state.points and then change picture.This will then change the click value of the main button to add more.
-    removePoints(index) {
-      const character = this.shrekCharacters[index];
-      if (character.purchased === false && this.points >= character.price) {
-        this.$store.dispatch("purchaseItem", { itemIndex: index });
-      } else {
-        alert("Shrek Says Get More Cash");
-      }
-    },
-    loggyness() {
-      console.log("Hi, I'm a random log");
-    },
-  },
-
-  computed: {
-    points() {
-      return this.$store.state.points;
+  method: {
+    begin() {
+      this.$router.push("Shop");
+      this.$store.commit("setBegin");
     },
   },
 };
 </script>
+
 <style>
-.main-page-content {
-  display: flex;
-}
-.clicker-container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://cdnb.artstation.com/p/assets/images/images/037/996/165/large/remi-mouillet-marais-shrek-pixel-art-1.jpg?1621889591);
+body {
+  background-image: url(https://www.whatspaper.com/wp-content/uploads/2022/01/shrek-wallpaper-whatspaper-5.jpg);
+  height: 82rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 </style>

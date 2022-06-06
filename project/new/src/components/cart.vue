@@ -30,7 +30,7 @@
 
 <script>
 import Button from "../components/button.vue";
-import { order, orderPrice, subtotal } from "../views/Home.vue";
+import { order, orderPrice, subtotal } from "../views/Shop.vue";
 export default {
   name: "Cart",
   props: {

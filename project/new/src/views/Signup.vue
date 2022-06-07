@@ -4,6 +4,7 @@
 
     <label for="email" class="emailLogin">Email:</label>
     <input
+      aria-label="something"
       type="email"
       name="email"
       v-model="email"
@@ -13,6 +14,7 @@
 
     <label for="email" class="passwordLogin">Password:</label>
     <input
+      aria-label="something"
       type="password"
       name="password"
       v-model="password"

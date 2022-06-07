@@ -201,8 +201,11 @@ nav a:hover {
 
 nav span {
   color: var(--white);
-  margin-left: 10%;
   font-size: 2rem;
+}
+
+.Register {
+  margin-left: 1.2rem;
 }
 
 .top {
@@ -268,11 +271,6 @@ form button {
 
 .button-begin {
   position: relative;
-<<<<<<< HEAD
-  border-radius: 25 px;
-}
-
-=======
   width: 50rem;
   height: 50rem;
   background-color: white;
@@ -280,7 +278,6 @@ form button {
 }
 
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
 .snow-bros li {
   width: 80px;
   height: 80px;
@@ -291,28 +288,24 @@ form button {
 
 .snow-bros li .a {
   background-image: linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 50px 10px, 30px 70px, 10px 10px, 20px 10px, 20px 20px,
     10px 80px, 20px 60px, 10px 60px;
@@ -321,15 +314,13 @@ form button {
 }
 
 .b {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -337,15 +328,13 @@ form button {
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 30px 80px, 40px 10px, 10px 10px, 30px 20px, 40px 10px,
     10px 10px, 20px 20px, 10px 80px, 20px 40px, 10px 40px;
@@ -354,24 +343,20 @@ form button {
 }
 
 .snow-bros li.c {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 30px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -386,28 +371,24 @@ form button {
 }
 
 .d {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
+      #00a2e2 30px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 30px 80px, 20px 10px, 20px 10px, 20px 10px, 30px 20px,
@@ -417,15 +398,13 @@ form button {
 }
 
 .e {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -440,15 +419,13 @@ form button {
 }
 
 .f {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -461,37 +438,31 @@ form button {
 }
 
 .g {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 30px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a, #3d060a);
@@ -502,41 +473,35 @@ form button {
 }
 
 .h {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 30px 80px, 20px 20px, 10px 80px, 20px 80px, 10px 80px;
   background-position: 0px 0px, 30px 30px, 30px 0px, 50px 0px, 70px 0px;
 }
 
 .i {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 30px 80px, 10px 80px;
   background-position: 20px 0px, 50px 0px;
@@ -547,24 +512,20 @@ form button {
     linear-gradient(to left, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
+      #00a2e2 30px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 40px 10px, 40px 10px, 10px 10px, 40px 20px, 10px 80px,
     10px 70px, 10px 70px;
@@ -573,15 +534,13 @@ form button {
 }
 
 .k {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -598,15 +557,13 @@ form button {
 }
 
 .l {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a, #3d060a);
@@ -616,27 +573,23 @@ form button {
 
 .m {
   background-image: linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to bottom, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 30px 10px, 30px 70px, 10px 30px, 10px 30px, 10px 40px,
     20px 80px, 10px 80px;
@@ -645,41 +598,33 @@ form button {
 }
 
 .n {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to bottom, #00a2e2 20px, #3d060a 20px),
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       #00a2e2 10px,
       #09c5d8 10px,
       #09c5d8 20px,
-      #3d060a 20px
-    ),
-    linear-gradient(
-      to top,
+      #3d060a 20px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 20px 80px, 10px 70px, 10px 60px, 10px 30px, 20px 80px,
     10px 80px;
@@ -689,46 +634,38 @@ form button {
 
 .o,
 .zero {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 30px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
+      #00a2e2 30px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 10px 60px, 20px 80px, 20px 20px, 10px 10px, 20px 20px,
     10px 80px, 10px 80px, 10px 60px, 10px 60px;
@@ -737,15 +674,13 @@ form button {
 }
 
 .p {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -760,47 +695,39 @@ form button {
 }
 
 .q {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 30px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a 10px, #09c5d8 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 10px 60px, 20px 80px, 20px 20px, 10px 10px, 20px 20px,
     20px 20px, 10px 80px, 10px 80px, 10px 70px, 10px 70px;
@@ -809,15 +736,13 @@ form button {
 }
 
 .r {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to bottom, #00a2e2 10px, #09c5d8 10px),
@@ -858,15 +783,13 @@ form button {
 
 .t {
   background-image: linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 80px 10px, 30px 70px, 80px 10px, 10px 70px;
@@ -874,44 +797,36 @@ form button {
 }
 
 .u {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 30px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a 10px, #00a323 10px),
     linear-gradient(to top, #3d060a, #3d060a),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
+      #00a2e2 30px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 10px 70px, 20px 80px, 20px 20px, 10px 80px, 10px 80px,
     10px 70px, 10px 70px;
@@ -937,37 +852,31 @@ form button {
 }
 
 .w {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
-    linear-gradient(
-      to top,
+      #00a2e2 40px),
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 20px,
       #09c5d8 20px,
       #09c5d8 30px,
-      #00a2e2 30px
-    ),
+      #00a2e2 30px),
     linear-gradient(to top, #3d060a, #3d060a),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to top, #09c5d8, #09c5d8),
     linear-gradient(to right, #3d060a 10px, #00a323 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 20px 80px, 10px 70px, 10px 30px, 20px 10px, 20px 10px,
     20px 10px, 20px 80px, 10px 80px;
@@ -1007,15 +916,13 @@ form button {
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
     linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       #3d060a 10px,
       #00a323 10px,
       #00a323 30px,
       #09c5d8 30px,
       #09c5d8 40px,
-      #00a2e2 40px
-    ),
+      #00a2e2 40px),
     linear-gradient(to top, #3d060a, #3d060a);
   background-size: 20px 10px, 20px 10px, 30px 10px, 30px 10px, 30px 10px,
     30px 10px, 30px 50px, 10px 50px;
@@ -1052,11 +959,8 @@ form button {
     height: 30%;
     width: 30%;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
-  .form {
+  <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .form {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -1067,32 +971,14 @@ form button {
     height: 20%;
     width: 30%;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
   .card {
     margin-left: 1rem;
     height: 20rem;
     border-radius: 2rem;
   }
-<<<<<<< HEAD
-  nav a {
-    font-size: 3rem;
-  }
-  nav {
-    display: block;
-  }
-  .navTitle {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
 
-=======
-
-  nav a {
+  <<<<<<< HEAD nav a {
     font-size: 3rem;
   }
 
@@ -1108,21 +994,28 @@ form button {
     font-size: 3rem;
   }
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
+  =======nav a {
+    font-size: 3rem;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .navTitle {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
   .form {
     margin-left: 10%;
     margin-right: 10%;
   }
-<<<<<<< HEAD
-  input.inputEmail {
-    width: 20rem;
-  }
-  input.inputPassword {
-    width: 20rem;
-  }
-=======
 
-  input.inputEmail {
+  <<<<<<< HEAD input.inputEmail {
     width: 20rem;
   }
 
@@ -1130,32 +1023,34 @@ form button {
     width: 20rem;
   }
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
-  .logoutSection {
+  =======input.inputEmail {
+    width: 20rem;
+  }
+
+  input.inputPassword {
+    width: 20rem;
+  }
+
+  >>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutSection {
     width: 20rem;
     height: 5rem;
   }
-<<<<<<< HEAD
-  nav span {
-    font-size: 1rem;
-  }
-=======
 
-  nav span {
+  <<<<<<< HEAD nav span {
     font-size: 1rem;
   }
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
-  .logoutButton {
+  =======nav span {
+    font-size: 1rem;
+  }
+
+  >>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutButton {
     font-size: 2rem;
     width: 10rem;
     height: 3rem;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
-  button {
+  <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 button {
     width: 8rem;
     font-size: 1.5rem;
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <Navbar v-if="started === true" />
+    <Navbar v-if="started === false" />
     <router-view />
   </div>
 </template>

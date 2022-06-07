@@ -4,6 +4,7 @@
 
     <label class="emailLogin" for="email">Email:</label>
     <input
+      aria-label="something"
       class="inputEmail"
       type="email"
       name="email"
@@ -13,6 +14,7 @@
 
     <label class="passwordLogin" for="email">Password:</label>
     <input
+      aria-label="something"
       class="inputPassword"
       type="password"
       name="password"

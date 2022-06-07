@@ -17,7 +17,11 @@
       <li class="c"></li>
       <li class="t"></li>
     </ol>
+<<<<<<< HEAD
     <button class="button-begin" @click="begin()">Click Here to Start</button>
+=======
+    <button class="button-begin">Click Here to Start</button>
+>>>>>>> 72cb0a8ea3b34bb7234627787a01b107f99cc2a1
   </div>
 </template>
 

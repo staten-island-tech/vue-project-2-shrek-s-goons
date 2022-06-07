@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="start-title">
     <ol class="snow-bros">
       <li class="t"></li>
       <li class="h"></li>

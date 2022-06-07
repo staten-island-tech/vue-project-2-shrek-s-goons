@@ -271,12 +271,8 @@ form button {
 
 .button-begin {
   position: relative;
-  width: 50rem;
-  height: 50rem;
-  background-color: white;
   border-radius: 25 px;
 }
-
 
 .snow-bros li {
   width: 80px;
@@ -960,98 +956,118 @@ form button {
     width: 30%;
   }
 
-  <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .form {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .BTN {
-    height: 20%;
-    width: 30%;
+  <<<<<<< HEAD <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .form {
+    =======.form {
+      >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d margin-left: 20%;
+      margin-right: 20%;
+    }
   }
 
-  .card {
-    margin-left: 1rem;
-    height: 20rem;
-    border-radius: 2rem;
-  }
+  @media screen and (max-width: 500px) {
+    .BTN {
+      height: 20%;
+      width: 30%;
+    }
 
-  <<<<<<< HEAD nav a {
-    font-size: 3rem;
-  }
+    <<<<<<< HEAD=======>>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d .card {
+      margin-left: 1rem;
+      height: 20rem;
+      border-radius: 2rem;
+    }
 
-  nav {
-    display: block;
-  }
+    <<<<<<< HEAD <<<<<<< HEAD nav a {
+      =======nav a {
+        >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d font-size: 3rem;
+      }
 
-  .navTitle {
-    font-size: 4rem;
-  }
+      nav {
+        display: block;
+      }
 
-  h2 {
-    font-size: 3rem;
-  }
+      .navTitle {
+        font-size: 4rem;
+      }
 
-  =======nav a {
-    font-size: 3rem;
-  }
+      h2 {
+        font-size: 3rem;
+      }
 
-  nav {
-    display: block;
-  }
+      <<<<<<< HEAD=======nav a {
+        =======nav a {
+          >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d font-size: 3rem;
+        }
 
-  .navTitle {
-    font-size: 4rem;
-  }
+        nav {
+          display: block;
+        }
 
-  h2 {
-    font-size: 3rem;
-  }
+        .navTitle {
+          font-size: 4rem;
+        }
 
-  .form {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+        h2 {
+          font-size: 3rem;
+        }
 
-  <<<<<<< HEAD input.inputEmail {
-    width: 20rem;
-  }
+        .form {
+          margin-left: 10%;
+          margin-right: 10%;
+        }
 
-  input.inputPassword {
-    width: 20rem;
-  }
+        <<<<<<< HEAD <<<<<<< HEAD input.inputEmail {
+          =======input.inputEmail {
+            >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d width: 20rem;
+          }
 
-  =======input.inputEmail {
-    width: 20rem;
-  }
+          input.inputPassword {
+            width: 20rem;
+          }
 
-  input.inputPassword {
-    width: 20rem;
-  }
+          <<<<<<< HEAD=======input.inputEmail {
+            =======input.inputEmail {
+              >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d width: 20rem;
+            }
 
-  >>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutSection {
-    width: 20rem;
-    height: 5rem;
-  }
+            input.inputPassword {
+              width: 20rem;
+            }
 
-  <<<<<<< HEAD nav span {
-    font-size: 1rem;
-  }
+            <<<<<<< HEAD>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutSection {
+              width: 20rem;
+              height: 5rem;
+            }
 
-  =======nav span {
-    font-size: 1rem;
-  }
+            <<<<<<< HEAD nav span {
+              font-size: 1rem;
+            }
 
-  >>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutButton {
-    font-size: 2rem;
-    width: 10rem;
-    height: 3rem;
-  }
+            =======nav span {
+              font-size: 1rem;
+            }
 
-  <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 button {
-    width: 8rem;
-    font-size: 1.5rem;
-  }
-}
+            >>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 .logoutButton {
+              =======.logoutSection {
+                width: 20rem;
+                height: 5rem;
+              }
+
+              nav span {
+                font-size: 1rem;
+              }
+
+              nav span {
+                font-size: 1rem;
+              }
+
+              .logoutButton {
+                >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d font-size: 2rem;
+                width: 10rem;
+                height: 3rem;
+              }
+
+              <<<<<<< HEAD <<<<<<< HEAD=======>>>>>>>72cb0a8ea3b34bb7234627787a01b107f99cc2a1 button {
+                =======button {
+                  >>>>>>>a4d3cc640e293efb334aa680b6313a6e1fc11e8d width: 8rem;
+                  font-size: 1.5rem;
+                }
+              }

@@ -24,11 +24,10 @@
 <script>
 export default {
   name: "Home",
-  method: {
+  methods: {
     begin() {
-      console.log("yes");
-      // this.$router.push("Shop");
-      // this.$store.commit("setBegin");
+      this.$router.push("Shop");
+      this.$store.commit("setBegin");
     },
   },
 };

@@ -31,6 +31,7 @@
 import { ref } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
+
 export default {
   setup() {
     const email = ref("");
@@ -44,7 +45,7 @@ export default {
           email: email.value,
           password: password.value,
         });
-        router.push("/");
+        router.push("/Shop");
       } catch (err) {
         error.value = err.message;
       }

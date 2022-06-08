@@ -222,6 +222,14 @@ label {
 form button {
   display: block;
   margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: white solid 4px;
+  background-color: rgb(118, 143, 82);
+  color: black;
+  transition: 0.3s;
 }
 
 .main-page-content {
@@ -270,8 +278,25 @@ form button {
 }
 
 .button-begin {
-  position: relative;
-  border-radius: 25 px;
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: white solid 4px;
+  background-color: rgb(118, 143, 82);
+  color: var(--black);
+  transition: 0.3s;
+  margin-top: 25rem;
+  position: absolute;
+  left: 47%;
+}
+
+.button-begin :hover {
+  transform: scale(1.1);
+}
+
+.button-begin :active {
+  transform: scale(0.6);
 }
 
 .snow-bros li {
@@ -283,8 +308,20 @@ form button {
 }
 
 .start-title {
-  align-content: center;
+  position: absolute;
+  top: 15%;
+  justify-content: center;
+  margin-left: 5%;
+  text-align: center;
 }
+.vue-logo,.firebase-logo{
+  max-height: 10rem;
+  margin-bottom: 12rem;
+  margin-left: 8rem;
+  margin-top: 7rem; 
+}
+
+
 
 .snow-bros li .a {
   background-image: linear-gradient(to left, #3d060a 10px, #00a2e2 10px),
@@ -1068,5 +1105,17 @@ form button {
   button {
     width: 8rem;
     font-size: 1.5rem;
+  }
+
+  .vue-logo,.firebase-logo{
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .button-begin{
+    position: absolute;
+    margin-top: 13rem;
+    left: 47%
   }
 }

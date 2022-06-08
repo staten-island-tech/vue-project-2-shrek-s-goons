@@ -5,7 +5,7 @@
 <script>
 export default {
   name: "Button",
-};    
+};
 </script>
 
 <style>
@@ -19,10 +19,10 @@ export default {
   color: black;
   transition: 0.3s;
 }
-button:hover {
+.button:hover {
   transform: scale(1.1);
 }
-button:active {
+.button:active {
   transform: scale(0.6);
 }
 </style>

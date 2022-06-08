@@ -228,7 +228,6 @@ const store = createStore({
       context.commit("setUser", null);
       context.commit("setPoints", 0);
       context.commit("setAdditiveValue", 5);
-      location.reload();
     },
   },
 });

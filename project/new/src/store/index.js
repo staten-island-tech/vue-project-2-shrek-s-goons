@@ -214,6 +214,8 @@ const store = createStore({
       if (res) {
         console.log("WEEEE");
         context.commit("setUser", res.user);
+        context.commit("setAuthIsReady", true);
+        context.dispatch("fetchData");
       } else {
         throw new Error("could not complete login");
       }
@@ -235,6 +237,7 @@ const unsub = onAuthStateChanged(auth, (user) => {
   store.commit("setAuthIsReady", true);
   console.log("ROBERTOOO");
   store.commit("setUser", user);
+  console.log("fetching data");
   store.dispatch("fetchData");
   unsub();
 });

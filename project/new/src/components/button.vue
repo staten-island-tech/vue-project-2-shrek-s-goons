@@ -10,9 +10,6 @@ export default {
 
 <style>
 .button {
-  width: 150px;
-  height: 40px;
-  font-size: 20px;
   border-radius: 20px;
   border: white solid 4px;
   background-color: rgb(118, 143, 82);

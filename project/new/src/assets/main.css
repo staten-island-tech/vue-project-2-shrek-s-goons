@@ -99,7 +99,7 @@ h5 {
   align-items: center;
   position: relative;
   overflow-y: scroll;
-  height: 100vh;
+  height: 94vh;
   background-color: var(--grey);
   z-index: 1;
 }
@@ -239,7 +239,7 @@ form button {
 
 .clicker-container {
   width: 100%;
-  height: 106vh;
+  height: 101vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -987,7 +987,13 @@ form button {
     10px 40px, 40px 40px, 0px 50px, 0px 60px, 0px 70px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+  }
+
   .snow-bros li {
     margin: 3rem;
   }
@@ -1017,7 +1023,13 @@ form button {
 
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
+  .button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+  }
+
   .snow-bros li {
     margin: 4rem;
   }
@@ -1041,14 +1053,14 @@ form button {
     left: 47%
   }
 
-  .clicker-container {
+  /* .clicker-container {
     height: 78.5rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
   .clicker-container {
-    height: 84rem;
+    height: 70rem;
   }
 
   .BTN {

@@ -1,7 +1,6 @@
 <template>
   <nav>
     <h1 class="navTitle">The Shrek Project</h1>
-    <!-- <StopWatch class="timer"></StopWatch> -->
 
     <template v-if="authIsReady">
       <!-- for all users -->
@@ -25,7 +24,6 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
-// import { StopWatch } from "../components/StopWatch.vue";
 export default {
   setup() {
     const store = useStore();

@@ -105,6 +105,9 @@ const store = createStore({
     setBegin(state) {
       state.started = true;
     },
+    setBegin2(state){
+      state.started = false;
+    },
     setAdditiveValue(state, payload) {
       state.additiveValue = payload;
     },

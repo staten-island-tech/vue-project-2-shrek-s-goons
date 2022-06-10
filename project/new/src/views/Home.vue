@@ -31,7 +31,6 @@ export default {
   methods: {
     begin() {
       this.$router.push("Shop");
-      this.$store.commit("setBegin");
       alert("Buy Macho Shrek to Win");
     },
   },

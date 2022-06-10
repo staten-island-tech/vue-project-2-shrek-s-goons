@@ -10,7 +10,6 @@ import {
 } from "firebase/auth";
 import { db } from "../firebase/config";
 import { setDoc, doc, getDoc } from "firebase/firestore";
-import createPersistedState from "vuex-persistedstate";
 
 const store = createStore({
   state: {
@@ -101,11 +100,6 @@ const store = createStore({
     points: 0,
     additiveValue: 5,
     started: false,
-    plugins: [
-      createPersistedState({
-        paths: ["started"],
-      }),
-    ],
   },
   mutations: {
     setBegin(state) {
